@@ -21,6 +21,14 @@ TEXT_TOOLTIP_C9979_SHIELD,Shields: 700 / [14/R] (Corvette)
 TEXT_TOOLTIP_C9979_SQUADRON,Fighters: 1 / 1 | Bombers: 1 / 2
 TEXT_TOOLTIP_C9979_WEAP1,2x Heavy Dual Laser Cannons: 2 / 5.0s / 4.6km
 TEXT_TOOLTIP_C9979_WEAP2,2x Medium Dual Rapid Laser Cannons: 6 / 5.0s / 3.6km
+TEXT_TOOLTIP_DH_OMNI,A dated corporate cargo hauler converted into a general purpose fleet support craft in an attempt to shift logistics burdens away from the Trade Federation. It is used as a fleet tender and to deploy interdiction mines - the most reliable method of hyperspace prevention in the era. It is durable and well-protected from fighters but vulnerable to larger enemy vessels.
+TEXT_TOOLTIP_DH_OMNI_HULL,Hull: 4400 (Heavy Frigate)
+TEXT_TOOLTIP_DH_OMNI_MINE,Interdiction Mines: 3 / 9
+TEXT_TOOLTIP_DH_OMNI_MOVE,Speed: 2.1 | Accel: 0.1 | Turn: 0.1
+TEXT_TOOLTIP_DH_OMNI_SHIELD,Shields: 3800 / [28.5/R] (Heavy Frigate)
+TEXT_TOOLTIP_DH_OMNI_SQUADRON,Fighters: 2.5 / 2.5 | Bombers: 2 / 2
+TEXT_TOOLTIP_DH_OMNI_TENDER,Fleet Tender: 100 / 1.0s / 3.2km
+TEXT_TOOLTIP_DH_OMNI_WEAP1,8x Medium Laser Cannons: 2 / 0.5s / 4.2km
 TEXT_TOOLTIP_DIAMOND,A Commerce Guild transport and cruiser fitted with a respectable number of laser batteries. It is often used as a fast and secure courier vessel by ranking corporate individuals. Serves as an anti-fighter screen in fleet engagements.
 TEXT_TOOLTIP_DIAMOND_HULL,Hull: 900 (Frigate)
 TEXT_TOOLTIP_DIAMOND_MOVE,Speed: 5.6 | Accel: 0.175 | Turn: 0.4
@@ -28,6 +36,10 @@ TEXT_TOOLTIP_DIAMOND_PD,Point-Defense: 1 / 0.21s / 1.5km
 TEXT_TOOLTIP_DIAMOND_SHIELD,Shields: 900 / [18/R] (Frigate)
 TEXT_TOOLTIP_DIAMOND_WEAP1,1x Medium Dual Laser Cannon: 2 / 1.67s / 4.1km
 TEXT_TOOLTIP_DIAMOND_WEAP2,4x Medium Rapid Laser Cannons: 6 / 1.67s / 3.6km
+TEXT_TOOLTIP_HARDCELL_TENDER,The Hardcell was a highly popular transport frigate for several Corporations and produced in large numbers before the Clone Wars started. With the outbreak of the war many Hardcells would be refitted into combat variants in addition to serving as troop transport. However some would become converted into logistic vessels for the CIS space forces where they would help to rapidly bring supplies and repairs to CIS fleets operating away from their bases.
+TEXT_TOOLTIP_HARDCELL_TENDER_WEAP1,5x Medium Laser Cannons: 2 / 3.13s / 4.0km
+TEXT_TOOLTIP_HARDCELL_WEAP1,5x Medium Laser Cannons: 2 / 2.08s / 4.0km
+TEXT_TOOLTIP_HARDCELL_WEAP2,1x Assault Concussion Missile: 3 / 9.0s / 7.0km
 TEXT_TOOLTIP_LUCREHULKBATTLESHIP,Lucrehulk conversion that uses interior space normally reserved for complements/cargo for extra reactors, shield generators and bracing. Mounts a significant amount of turbolasers as a result, while maintaining a dangerous defensive laser grid. Compared to battle carriers it is much better at ship to ship combat but loses out in sheer fighter presence.
 TEXT_TOOLTIP_LUCREHULKBATTLESHIP_HULL,Hull: 26000 (Capital)
 TEXT_TOOLTIP_LUCREHULKBATTLESHIP_MOVE,Speed: 2.1 | Accel: 0.05 | Turn: 0.15
@@ -36,6 +48,13 @@ TEXT_TOOLTIP_LUCREHULKBATTLESHIP_SQUADRON,Fighters: 3 / 10 | Bombers: 1 / 4
 TEXT_TOOLTIP_LUCREHULKBATTLESHIP_WEAP1,3x Heavy Turbolasers: 2 / 1.03s / 7.6km
 TEXT_TOOLTIP_LUCREHULKBATTLESHIP_WEAP2,28x Medium Turbolasers: 2 / 1.0s / 6.6km
 TEXT_TOOLTIP_LUCREHULKBATTLESHIP_WEAP3,40x Medium Quad Laser Cannons: 2 / 0.5s / 4.6km
+TEXT_TOOLTIP_MUNIFEX,Also known as the "Class 1000" for setting the modern KDY production batch size. A fragile but over-gunned frigate produced for the Trade Defence Force two centuries before the Clone Wars. Intended to eliminate similar-sized vessels while also being plentiful enough to mass-attack larger cruisers.
+TEXT_TOOLTIP_MUNIFEX_HULL,Hull: 900 (Frigate)
+TEXT_TOOLTIP_MUNIFEX_MOVE,Speed: 3.5 | Accel: 0.175 | Turn: 0.3
+TEXT_TOOLTIP_MUNIFEX_SHIELD,Shields: 900 / [13.5/R] (Frigate)
+TEXT_TOOLTIP_MUNIFEX_SQUADRON,Fighters: 0.5 / 0.5
+TEXT_TOOLTIP_MUNIFEX_WEAP1,2x Light Turbolasers: 2 / 0.71s / 5.1km
+TEXT_TOOLTIP_MUNIFEX_WEAP2,2x Light Ion Cannons: 2 / 1.67s / 5.1km
 TEXT_TOOLTIP_PROVIDENCE_DREADNOUGHT,An up-scaled version of a carrier/destroyer Providence used as a flagship in fleet actions or as a contender to larger Republic vessels. It retains a similar armament and role but is progressively more powerful than its smaller sibling.
 TEXT_TOOLTIP_PROVIDENCE_DREADNOUGHT_HULL,Hull: 6750 (Capital)
 TEXT_TOOLTIP_PROVIDENCE_DREADNOUGHT_MOVE,Speed: 2.8 | Accel: 0.125 | Turn: 0.2
@@ -50,26 +69,7 @@ TEXT_UNIT_AUXILIA,Auxilia Pursuit Destroyer
 TEXT_UNIT_C9979,C-9979 Carrier
 TEXT_UNIT_DH_OMNI,DH-Omni Support Vessel
 TEXT_UNIT_DIAMOND,Diamond Cruiser
-TEXT_UNIT_LUCREHULKBATTLESHIP,Lucrehulk Battleship
-TEXT_UNIT_PROVIDENCE_DREADNOUGHT,Providence Dreadnought
-TEXT_UNIT_MUNIFEX,Munifex Light Cruiser
 TEXT_UNIT_HARDCELL,Hardcell Missile Ship
-TEXT_TOOLTIP_HARDCELL_TENDER,The Hardcell was a highly popular transport frigate for several Corporations and produced in large numbers before the Clone Wars started. With the outbreak of the war many Hardcells would be refitted into combat variants in addition to serving as troop transport. However some would become converted into logistic vessels for the CIS space forces where they would help to rapidly bring supplies and repairs to CIS fleets operating away from their bases.
-TEXT_TOOLTIP_HARDCELL_TENDER_WEAP1,5x Medium Laser Cannons: 2 / 3.13s / 4.0km
-TEXT_TOOLTIP_HARDCELL_WEAP1,5x Medium Laser Cannons: 2 / 2.08s / 4.0km
-TEXT_TOOLTIP_HARDCELL_WEAP2,1x Assault Concussion Missile: 3 / 9.0s / 7.0km
-TEXT_TOOLTIP_DH_OMNI,A dated corporate cargo hauler converted into a general purpose fleet support craft in an attempt to shift logistics burdens away from the Trade Federation. It is used as a fleet tender and to deploy interdiction mines - the most reliable method of hyperspace prevention in the era. It is durable and well-protected from fighters but vulnerable to larger enemy vessels.
-TEXT_TOOLTIP_DH_OMNI_HULL,Hull: 4400 (Heavy Frigate)
-TEXT_TOOLTIP_DH_OMNI_MINE,Interdiction Mines: 3 / 9
-TEXT_TOOLTIP_DH_OMNI_MOVE,Speed: 2.1 | Accel: 0.1 | Turn: 0.1
-TEXT_TOOLTIP_DH_OMNI_SHIELD,Shields: 3800 / [28.5/R] (Heavy Frigate)
-TEXT_TOOLTIP_DH_OMNI_SQUADRON,Fighters: 2.5 / 2.5 | Bombers: 2 / 2
-TEXT_TOOLTIP_DH_OMNI_TENDER,Fleet Tender: 100 / 1.0s / 3.2km
-TEXT_TOOLTIP_DH_OMNI_WEAP1,8x Medium Laser Cannons: 2 / 0.5s / 4.2km
-TEXT_TOOLTIP_MUNIFEX,Also known as the "Class 1000" for setting the modern KDY production batch size. A fragile but over-gunned frigate produced for the Trade Defence Force two centuries before the Clone Wars. Intended to eliminate similar-sized vessels while also being plentiful enough to mass-attack larger cruisers.
-TEXT_TOOLTIP_MUNIFEX_HULL,Hull: 900 (Frigate)
-TEXT_TOOLTIP_MUNIFEX_MOVE,Speed: 3.5 | Accel: 0.175 | Turn: 0.3
-TEXT_TOOLTIP_MUNIFEX_SHIELD,Shields: 900 / [13.5/R] (Frigate)
-TEXT_TOOLTIP_MUNIFEX_SQUADRON,Fighters: 0.5 / 0.5
-TEXT_TOOLTIP_MUNIFEX_WEAP1,2x Light Turbolasers: 2 / 0.71s / 5.1km
-TEXT_TOOLTIP_MUNIFEX_WEAP2,2x Light Ion Cannons: 2 / 1.67s / 5.1km
+TEXT_UNIT_LUCREHULKBATTLESHIP,Lucrehulk Battleship
+TEXT_UNIT_MUNIFEX,Munifex Light Cruiser
+TEXT_UNIT_PROVIDENCE_DREADNOUGHT,Providence Dreadnought

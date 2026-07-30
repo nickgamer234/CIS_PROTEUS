@@ -36,8 +36,12 @@ TEXT_TOOLTIP_DIAMOND_PD,Point-Defense: 1 / 0.21s / 1.5km
 TEXT_TOOLTIP_DIAMOND_SHIELD,Shields: 900 / [18/R] (Frigate)
 TEXT_TOOLTIP_DIAMOND_WEAP1,1x Medium Dual Laser Cannon: 2 / 1.67s / 4.1km
 TEXT_TOOLTIP_DIAMOND_WEAP2,4x Medium Rapid Laser Cannons: 6 / 1.67s / 3.6km
-TEXT_TOOLTIP_HARDCELL_TENDER,The Hardcell was a highly popular transport frigate for several Corporations and produced in large numbers before the Clone Wars started. With the outbreak of the war many Hardcells would be refitted into combat variants in addition to serving as troop transport. However some would become converted into logistic vessels for the CIS space forces where they would help to rapidly bring supplies and repairs to CIS fleets operating away from their bases.
-TEXT_TOOLTIP_HARDCELL_TENDER_WEAP1,5x Medium Laser Cannons: 2 / 3.13s / 4.0km
+TEXT_TOOLTIP_HARDCELL,A medium transport frigate developed by the Techno Union and sold to the Intergalactic Banking Clan and Confederacy of Independent Systems. Though typically only lightly armed with anti-starfighter lasers, vessels intended for combat roles are also outfitted with missile launchers. Six such variants were part of the fleet sent to destroy Outbound Flight and were destroyed by CEDF Commander Thrawn. It is best used to screen friendly vessels while providing long-range missile support.
+TEXT_TOOLTIP_HARDCELL_FLEET_TENDER,Fighter Tender: 2 / 1.0s / 1.9km
+TEXT_TOOLTIP_HARDCELL_HULL,Hull: 700 (Corvette)
+TEXT_TOOLTIP_HARDCELL_MOVE,Speed: 5.95 | Accel: 0.2 | Turn: 0.4
+TEXT_TOOLTIP_HARDCELL_SHIELD,Shields: 500 / [10/R] (Corvette)
+TEXT_TOOLTIP_HARDCELL_SQUADRON,Fighters: 0.5 / 1.5
 TEXT_TOOLTIP_HARDCELL_WEAP1,5x Medium Laser Cannons: 2 / 2.08s / 4.0km
 TEXT_TOOLTIP_HARDCELL_WEAP2,1x Assault Concussion Missile: 3 / 9.0s / 7.0km
 TEXT_TOOLTIP_LUCREHULKBATTLESHIP,Lucrehulk conversion that uses interior space normally reserved for complements/cargo for extra reactors, shield generators and bracing. Mounts a significant amount of turbolasers as a result, while maintaining a dangerous defensive laser grid. Compared to battle carriers it is much better at ship to ship combat but loses out in sheer fighter presence.

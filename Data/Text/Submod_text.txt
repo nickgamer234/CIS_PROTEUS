@@ -1,1 +1,33 @@
-﻿
+﻿TEXT_TOOLTIP_PROVIDENCE_DREADNOUGHT,An up-scaled version of a carrier/destroyer Providence used as a flagship in fleet actions or as a contender to larger Republic vessels. It retains a similar armament and role but is progressively more powerful than its smaller sibling.
+TEXT_TOOLTIP_PROVIDENCE_DREADNOUGHT_HULL,Hull: 6750 (Capital)
+TEXT_TOOLTIP_PROVIDENCE_DREADNOUGHT_MOVE,Speed: 2.8 | Accel: 0.125 | Turn: 0.2
+TEXT_TOOLTIP_PROVIDENCE_DREADNOUGHT_SHIELD,Shields: 6000 / [60/R] (Capital)
+TEXT_TOOLTIP_PROVIDENCE_DREADNOUGHT_SQUADRON,Fighters: 3 / 10 | Bombers: 3 / 10
+TEXT_TOOLTIP_PROVIDENCE_DREADNOUGHT_WEAP1,8x Light Quad Turbolasers: 2 / 2.86s / 5.4km
+TEXT_TOOLTIP_PROVIDENCE_DREADNOUGHT_WEAP2,1x Ultraheavy Ion Cannon: 1 / 5.0s / 8.4km
+TEXT_TOOLTIP_PROVIDENCE_DREADNOUGHT_WEAP3,4x Light Anti-Fighter Ion Cannons: 2 / 1.67s / 3.4km
+TEXT_TOOLTIP_PROVIDENCE_DREADNOUGHT_WEAP4,3x Medium Quad Laser Cannons: 2 / 0.44s / 4.4km
+TEXT_TOOLTIP_PROVIDENCE_DREADNOUGHT_WEAP5,8x Assault Concussion Missiles: 3 / 9.0s / 7.4km
+TEXT_UNIT_AUXILIA,Auxilia Pursuit Destroyer
+TEXT_TOOLTIP_AUXILIA,An antiquated but well-rounded cruiser. It was designed to run down pirate vessels by the Trade Defense Force several centuries before the Clone Wars, and commonly sees service alongside the Captor-class that shares its base design. Well suited to engaging medium capital ships and escort vessels.
+TEXT_TOOLTIP_AUXILIA_HULL,Hull: 2310 (Frigate)
+TEXT_TOOLTIP_AUXILIA_MOVE,Speed: 5.6 | Accel: 0.25 | Turn: 0.45
+TEXT_TOOLTIP_AUXILIA_SHIELD,Shields: 2500 / [25/R] (Frigate)
+TEXT_TOOLTIP_AUXILIA_WEAP1,2x Light Dual Turbolasers: 2 / 2.5s / 5.1km
+TEXT_TOOLTIP_AUXILIA_WEAP2,4x Light Turbolasers: 2 / 1.0s / 5.1km
+TEXT_TOOLTIP_AUXILIA_WEAP3,2x Light Dual Ion Cannons: 2 / 2.5s / 5.1km
+TEXT_TOOLTIP_AUXILIA_WEAP4,2x Concussion Missiles: 1 / 10.0s / 4.1km
+TEXT_TOOLTIP_C9979,A ubiquitous logistics vessel designed to resemble the pre-existing cargo barges and support vessels of the Trade Federation. Though most famous as a supermassive troop lander, the C-9979 is often converted to a respectable carrier and picket by converting the internal storage into bays suitable for storing both piloted and droid starfighters.
+TEXT_TOOLTIP_C9979_FACTORY_CIS_1,B1 Battle Droid Squad: 4 / ∞
+TEXT_TOOLTIP_C9979_FACTORY_CIS_2,Single Trooper Aerial Platform: 4 / 8
+TEXT_TOOLTIP_C9979_FACTORY_CIS_3,Armored Assault Tank-1: 2 / 4
+TEXT_TOOLTIP_C9979_FACTORY_CIS_4,Multi-Troop Transport: 1 / 0
+TEXT_TOOLTIP_C9979_FACTORY_CIS_HEALTH,Health: 2000 (Structure)
+TEXT_TOOLTIP_C9979_FACTORY_CIS_WEAP1,4x Heavy AV Blaster Cannons: 2 / 1.0s / 1000m
+TEXT_TOOLTIP_C9979_HULL,Hull: 700 (Corvette)
+TEXT_TOOLTIP_C9979_MOVE,Speed: 3.5 | Accel: 0.2 | Turn: 0.45
+TEXT_TOOLTIP_C9979_PD,Point-Defense: 1 / 1.14s / 1.5km
+TEXT_TOOLTIP_C9979_SHIELD,Shields: 700 / [14/R] (Corvette)
+TEXT_TOOLTIP_C9979_SQUADRON,Fighters: 1 / 1 | Bombers: 1 / 2
+TEXT_TOOLTIP_C9979_WEAP1,2x Heavy Dual Laser Cannons: 2 / 5.0s / 4.6km
+TEXT_TOOLTIP_C9979_WEAP2,2x Medium Dual Rapid Laser Cannons: 6 / 5.0s / 3.6km

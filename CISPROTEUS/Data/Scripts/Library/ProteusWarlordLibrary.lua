@@ -525,7 +525,7 @@ return {
 			FriendlyName = "New Separatist Union",
 			Planets = {"KUAT"},
 			LeaderTable = {"NO_LEGITIMACY",["KALANI_TEAM"] = {"GENERAL_KALANI"} },
-			LeaderEndingNames = {"Supreme General Kalani", },
+			LeaderEndingNames = {"Supreme General Kalani"},
 			HeroList = {"Trench_Invulnerable", "Kalani_Team"},
 			RemoveList = {"Gamma_ATR_6_Group", "IPV1", "Lancer_Frigate", "Carrack_Cruiser", "Ton_Falk_Escort_Carrier", "Star_Galleon", "Strike_Cruiser", "Imperial_DHC", "Vindicator_Cruiser", "Acclamator_II", "Victory_I_Star_Destroyer", "Victory_II_Star_Destroyer","Procursator_Star_Destroyer", "Victory_I_Frigate", "Gladiator_II", "Surveyor_Frigate", "Active_Frigate", "Interdictor_Star_Destroyer", "Imperial_I_Star_Destroyer", "Imperial_II_Star_Destroyer", "Tector_Star_Destroyer", "Allegiance_Battlecruiser", "Immobilizer_418"},
 			RemoveUnits = {"Gamma_ATR_6_Group", "IPV1", "Lancer_Frigate", "Carrack_Cruiser", "Ton_Falk_Escort_Carrier", "Star_Galleon", "Strike_Cruiser", "Imperial_DHC", "Vindicator_Cruiser", "Acclamator_II", "Victory_I_Star_Destroyer", "Victory_II_Star_Destroyer","Procursator_Star_Destroyer", "Victory_I_Frigate", "Gladiator_II", "Surveyor_Frigate", "Active_Frigate", "Interdictor_Star_Destroyer", "Imperial_I_Star_Destroyer", "Imperial_II_Star_Destroyer", "Tector_Star_Destroyer", "Allegiance_Battlecruiser", "Immobilizer_418"},

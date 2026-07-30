@@ -1351,7 +1351,7 @@
 		<Property_Flags>Boardable</Property_Flags>
 
 		<Required_Special_Structures>
-		CSA_Ship_Market,
+		CSA_Ship_Market, Imperial_Proteus_Shipyard_Level_Three | Imperial_Proteus_Shipyard_Level_Four,
 		AI_Category_Dummy | Capital_Category_Dummy
 		</Required_Special_Structures>
 

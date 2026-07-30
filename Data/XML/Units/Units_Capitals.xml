@@ -1342,7 +1342,7 @@
 	<SpaceUnit Name="Bulwark_II">
 		<Variant_Of_Existing_Type>Template_Bulwark_II</Variant_Of_Existing_Type>
 
-		<Affiliation>Corporate_Sector</Affiliation>
+		<Affiliation>Corporate_Sector, Imperial_Proteus</Affiliation>
 		<Build_Initially_Locked>No</Build_Initially_Locked>
 		<Slice_Cost_Credits>1400</Slice_Cost_Credits>
 		<Tech_Level>0</Tech_Level>

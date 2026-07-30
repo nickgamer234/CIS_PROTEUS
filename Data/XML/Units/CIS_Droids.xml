@@ -13,7 +13,7 @@
 
 		<Icon_Name>i_button_b1.tga</Icon_Name>
 		<AI_Combat_Power>234.50</AI_Combat_Power>
-		<Affiliation>Rebel, Trade_Federation</Affiliation>
+		<Affiliation>Imperial_Proteus</Affiliation>
 	</GroundInfantry>
 
 	<GroundCompany Name="B1_Droid_Company">
@@ -44,7 +44,7 @@
 		<Expensive_Bribe_Cost>0</Expensive_Bribe_Cost>
 		<Build_Time_Seconds>5</Build_Time_Seconds>
 		<Slice_Cost_Credits/>
-		<Required_Special_Structures>R_Ground_Barracks | Balmorran_Arms_HQ | Baktoid_HQ</Required_Special_Structures>
+		<Required_Special_Structures>I_Ground_Barracks | Balmorran_Arms_HQ | Baktoid_HQ</Required_Special_Structures>
 		<Build_Time_Reduced_By_Multiple_Factories> Yes </Build_Time_Reduced_By_Multiple_Factories>
 		<Build_Tab_Land_Units>Yes</Build_Tab_Land_Units>
 		<Build_Initially_Locked>No</Build_Initially_Locked>
@@ -55,7 +55,7 @@
 		<Tech_Level>0</Tech_Level>
 		<Required_Ground_Base_Level>1</Required_Ground_Base_Level>
 
-		<Affiliation>Rebel, Trade_Federation</Affiliation>
+		<Affiliation>Imperial_Proteus</Affiliation>
 
 		<Behavior>DUMMY_GROUND_COMPANY</Behavior>
 
@@ -824,7 +824,7 @@
 
 		<Icon_Name>i_button_b2.tga</Icon_Name>
 		<AI_Combat_Power>153.31</AI_Combat_Power>
-		<Affiliation>Rebel, Banking_Clan, Trade_Federation, Commerce_Guild, Techno_Union, Independent_Forces</Affiliation>
+		<Affiliation>Imperial_Proteus</Affiliation>
 	</GroundInfantry>
   
 	<GroundCompany Name="B2_Droid_Company">
@@ -858,7 +858,7 @@
 		<Build_Cost_Credits>300</Build_Cost_Credits>
 		<Build_Time_Seconds>10</Build_Time_Seconds>
 		<Slice_Cost_Credits/>
-		<Required_Special_Structures>R_Ground_Barracks | Baktoid_HQ</Required_Special_Structures>
+		<Required_Special_Structures>I_Ground_Barracks | Baktoid_HQ</Required_Special_Structures>
 		<Build_Time_Reduced_By_Multiple_Factories> Yes </Build_Time_Reduced_By_Multiple_Factories>
 		<Build_Tab_Land_Units>Yes</Build_Tab_Land_Units>
 		<Build_Initially_Locked>No</Build_Initially_Locked>
@@ -870,7 +870,7 @@
 		<Tech_Level>0</Tech_Level>
 		<Required_Ground_Base_Level>1</Required_Ground_Base_Level>
 
-		<Affiliation>Rebel, Techno_Union, Trade_Federation, Commerce_Guild, Banking_Clan</Affiliation>
+		<Affiliation>Imperial_Proteus</Affiliation>
 		<Political_Control/>
 
 		<Behavior>DUMMY_GROUND_COMPANY</Behavior>

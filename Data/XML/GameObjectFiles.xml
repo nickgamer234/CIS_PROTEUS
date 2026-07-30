@@ -122,6 +122,9 @@
 	<File>Units\New_Republic_Ground.xml</File>
 	<File>Units\EotH_Ground.xml</File>
 	<File>Units\Chiss_Ground.xml</File>
+	<File>Units\CIS_Droids.xml</File>
+	<File>Units\CIS_Ground_Units.xml</File>
+	<File>Units\CIS_Organic_Infantry.xml</File>
 	<File>Units\CSA_Ground.xml</File>
 	<File>Units\Hapes_Ground.xml</File>
 	<File>Units\SsiRuuvi_Ground.xml</File>

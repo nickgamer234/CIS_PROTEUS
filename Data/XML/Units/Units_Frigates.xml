@@ -3280,12 +3280,12 @@
 	<SpaceUnit Name="Munificent">
 		<Variant_Of_Existing_Type>Template_Munificent</Variant_Of_Existing_Type>
 
-		<Affiliation>Pentastar, Corporate_Sector</Affiliation>
+		<Affiliation>Pentastar, Corporate_Sector, Imperial_Proteus</Affiliation>
 		<Tech_Level>0</Tech_Level>
 		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
 		<Required_Star_Base_Level>1</Required_Star_Base_Level>
 		<Required_Special_Structures>
-		CSA_Ship_Market,
+		CSA_Ship_Market | Imperial_Proteus_Shipyard_Level_Two | Imperial_Proteus_Shipyard_Level_Three | Imperial_Proteus_Shipyard_Level_Four,
 		AI_Category_Dummy | Heavy_Frigate_Category_Dummy,
 		</Required_Special_Structures>
 		<Required_Planets/>
@@ -4129,14 +4129,13 @@
 	<SpaceUnit Name="Recusant_Light_Destroyer">
 		<Variant_Of_Existing_Type>Template_Recusant_Light_Destroyer</Variant_Of_Existing_Type>
 
-		<Affiliation>Corporate_Sector</Affiliation>
+		<Affiliation>Corporate_Sector, Imperial_Proteus</Affiliation>
 		<Tech_Level>0</Tech_Level>
 		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
 		<Required_Star_Base_Level>1</Required_Star_Base_Level>
 		<Required_Special_Structures>
-		CSA_Shipyard_Level_Two | CSA_Shipyard_Level_Three | CSA_Shipyard_Level_Four,
+		CSA_Shipyard_Level_Two | CSA_Shipyard_Level_Three | CSA_Shipyard_Level_Four | Imperial_Proteus_Shipyard_Level_Two | Imperial_Proteus_Shipyard_Level_Three | Imperial_Proteus_Shipyard_Level_Four,
 		AI_Category_Dummy | Heavy_Frigate_Category_Dummy,
-
 		</Required_Special_Structures>
 		<Required_Planets/>
 

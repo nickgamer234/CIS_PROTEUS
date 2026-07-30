@@ -18,6 +18,7 @@
 
 	<!-- Load all templates to reduce looping -->
 	<File>Units\TransportUnits_Master.xml</File>
+	<File>Units\Units_Frigates.xml</File>
 	<File>Units\Templates_Dummy.xml</File>
 	<File>Units\Templates_Force_Units.xml</File>
 	<File>Units\Force_Units_CoreSaga.xml</File>		<!-- Load after template for no load looping -->

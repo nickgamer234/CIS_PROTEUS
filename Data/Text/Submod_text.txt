@@ -1,32 +1,4 @@
 ﻿TEXT_NOTE,Put text changes for submods here
-TEXT_TOOLTIP_LUCREHULKBATTLESHIP,Lucrehulk conversion that uses interior space normally reserved for complements/cargo for extra reactors, shield generators and bracing. Mounts a significant amount of turbolasers as a result, while maintaining a dangerous defensive laser grid. Compared to battle carriers it is much better at ship to ship combat but loses out in sheer fighter presence.
-TEXT_TOOLTIP_LUCREHULKBATTLESHIP_HULL,Hull: 26000 (Capital)
-TEXT_TOOLTIP_LUCREHULKBATTLESHIP_MOVE,Speed: 2.1 | Accel: 0.05 | Turn: 0.15
-TEXT_TOOLTIP_LUCREHULKBATTLESHIP_SHIELD,Shields: 30000 / [75/R] (Capital)
-TEXT_TOOLTIP_LUCREHULKBATTLESHIP_SQUADRON,Fighters: 3 / 10 | Bombers: 1 / 4
-TEXT_TOOLTIP_LUCREHULKBATTLESHIP_WEAP1,3x Heavy Turbolasers: 2 / 1.03s / 7.6km
-TEXT_TOOLTIP_LUCREHULKBATTLESHIP_WEAP2,28x Medium Turbolasers: 2 / 1.0s / 6.6km
-TEXT_TOOLTIP_LUCREHULKBATTLESHIP_WEAP3,40x Medium Quad Laser Cannons: 2 / 0.5s / 4.6km
-TEXT_TOOLTIP_PROVIDENCE_DREADNOUGHT,An up-scaled version of a carrier/destroyer Providence used as a flagship in fleet actions or as a contender to larger Republic vessels. It retains a similar armament and role but is progressively more powerful than its smaller sibling.
-TEXT_TOOLTIP_PROVIDENCE_DREADNOUGHT_HULL,Hull: 6750 (Capital)
-TEXT_TOOLTIP_PROVIDENCE_DREADNOUGHT_MOVE,Speed: 2.8 | Accel: 0.125 | Turn: 0.2
-TEXT_TOOLTIP_PROVIDENCE_DREADNOUGHT_SHIELD,Shields: 6000 / [60/R] (Capital)
-TEXT_TOOLTIP_PROVIDENCE_DREADNOUGHT_SQUADRON,Fighters: 3 / 10 | Bombers: 3 / 10
-TEXT_TOOLTIP_PROVIDENCE_DREADNOUGHT_WEAP1,8x Light Quad Turbolasers: 2 / 2.86s / 5.4km
-TEXT_TOOLTIP_PROVIDENCE_DREADNOUGHT_WEAP2,1x Ultraheavy Ion Cannon: 1 / 5.0s / 8.4km
-TEXT_TOOLTIP_PROVIDENCE_DREADNOUGHT_WEAP3,4x Light Anti-Fighter Ion Cannons: 2 / 1.67s / 3.4km
-TEXT_TOOLTIP_PROVIDENCE_DREADNOUGHT_WEAP4,3x Medium Quad Laser Cannons: 2 / 0.44s / 4.4km
-TEXT_TOOLTIP_PROVIDENCE_DREADNOUGHT_WEAP5,8x Assault Concussion Missiles: 3 / 9.0s / 7.4km
-TEXT_UNIT_DH_OMNI,DH-Omni Support Vessel
-TEXT_UNIT_DIAMOND,Diamond Cruiser
-TEXT_TOOLTIP_DIAMOND,A Commerce Guild transport and cruiser fitted with a respectable number of laser batteries. It is often used as a fast and secure courier vessel by ranking corporate individuals. Serves as an anti-fighter screen in fleet engagements.
-TEXT_TOOLTIP_DIAMOND_HULL,Hull: 900 (Frigate)
-TEXT_TOOLTIP_DIAMOND_MOVE,Speed: 5.6 | Accel: 0.175 | Turn: 0.4
-TEXT_TOOLTIP_DIAMOND_PD,Point-Defense: 1 / 0.21s / 1.5km
-TEXT_TOOLTIP_DIAMOND_SHIELD,Shields: 900 / [18/R] (Frigate)
-TEXT_TOOLTIP_DIAMOND_WEAP1,1x Medium Dual Laser Cannon: 2 / 1.67s / 4.1km
-TEXT_TOOLTIP_DIAMOND_WEAP2,4x Medium Rapid Laser Cannons: 6 / 1.67s / 3.6km
-TEXT_UNIT_AUXILIA,Auxilia Pursuit Destroyer
 TEXT_TOOLTIP_AUXILIA,An antiquated but well-rounded cruiser. It was designed to run down pirate vessels by the Trade Defense Force several centuries before the Clone Wars, and commonly sees service alongside the Captor-class that shares its base design. Well suited to engaging medium capital ships and escort vessels.
 TEXT_TOOLTIP_AUXILIA_HULL,Hull: 2310 (Frigate)
 TEXT_TOOLTIP_AUXILIA_MOVE,Speed: 5.6 | Accel: 0.25 | Turn: 0.45
@@ -49,5 +21,33 @@ TEXT_TOOLTIP_C9979_SHIELD,Shields: 700 / [14/R] (Corvette)
 TEXT_TOOLTIP_C9979_SQUADRON,Fighters: 1 / 1 | Bombers: 1 / 2
 TEXT_TOOLTIP_C9979_WEAP1,2x Heavy Dual Laser Cannons: 2 / 5.0s / 4.6km
 TEXT_TOOLTIP_C9979_WEAP2,2x Medium Dual Rapid Laser Cannons: 6 / 5.0s / 3.6km
+TEXT_TOOLTIP_DIAMOND,A Commerce Guild transport and cruiser fitted with a respectable number of laser batteries. It is often used as a fast and secure courier vessel by ranking corporate individuals. Serves as an anti-fighter screen in fleet engagements.
+TEXT_TOOLTIP_DIAMOND_HULL,Hull: 900 (Frigate)
+TEXT_TOOLTIP_DIAMOND_MOVE,Speed: 5.6 | Accel: 0.175 | Turn: 0.4
+TEXT_TOOLTIP_DIAMOND_PD,Point-Defense: 1 / 0.21s / 1.5km
+TEXT_TOOLTIP_DIAMOND_SHIELD,Shields: 900 / [18/R] (Frigate)
+TEXT_TOOLTIP_DIAMOND_WEAP1,1x Medium Dual Laser Cannon: 2 / 1.67s / 4.1km
+TEXT_TOOLTIP_DIAMOND_WEAP2,4x Medium Rapid Laser Cannons: 6 / 1.67s / 3.6km
+TEXT_TOOLTIP_LUCREHULKBATTLESHIP,Lucrehulk conversion that uses interior space normally reserved for complements/cargo for extra reactors, shield generators and bracing. Mounts a significant amount of turbolasers as a result, while maintaining a dangerous defensive laser grid. Compared to battle carriers it is much better at ship to ship combat but loses out in sheer fighter presence.
+TEXT_TOOLTIP_LUCREHULKBATTLESHIP_HULL,Hull: 26000 (Capital)
+TEXT_TOOLTIP_LUCREHULKBATTLESHIP_MOVE,Speed: 2.1 | Accel: 0.05 | Turn: 0.15
+TEXT_TOOLTIP_LUCREHULKBATTLESHIP_SHIELD,Shields: 30000 / [75/R] (Capital)
+TEXT_TOOLTIP_LUCREHULKBATTLESHIP_SQUADRON,Fighters: 3 / 10 | Bombers: 1 / 4
+TEXT_TOOLTIP_LUCREHULKBATTLESHIP_WEAP1,3x Heavy Turbolasers: 2 / 1.03s / 7.6km
+TEXT_TOOLTIP_LUCREHULKBATTLESHIP_WEAP2,28x Medium Turbolasers: 2 / 1.0s / 6.6km
+TEXT_TOOLTIP_LUCREHULKBATTLESHIP_WEAP3,40x Medium Quad Laser Cannons: 2 / 0.5s / 4.6km
+TEXT_TOOLTIP_PROVIDENCE_DREADNOUGHT,An up-scaled version of a carrier/destroyer Providence used as a flagship in fleet actions or as a contender to larger Republic vessels. It retains a similar armament and role but is progressively more powerful than its smaller sibling.
+TEXT_TOOLTIP_PROVIDENCE_DREADNOUGHT_HULL,Hull: 6750 (Capital)
+TEXT_TOOLTIP_PROVIDENCE_DREADNOUGHT_MOVE,Speed: 2.8 | Accel: 0.125 | Turn: 0.2
+TEXT_TOOLTIP_PROVIDENCE_DREADNOUGHT_SHIELD,Shields: 6000 / [60/R] (Capital)
+TEXT_TOOLTIP_PROVIDENCE_DREADNOUGHT_SQUADRON,Fighters: 3 / 10 | Bombers: 3 / 10
+TEXT_TOOLTIP_PROVIDENCE_DREADNOUGHT_WEAP1,8x Light Quad Turbolasers: 2 / 2.86s / 5.4km
+TEXT_TOOLTIP_PROVIDENCE_DREADNOUGHT_WEAP2,1x Ultraheavy Ion Cannon: 1 / 5.0s / 8.4km
+TEXT_TOOLTIP_PROVIDENCE_DREADNOUGHT_WEAP3,4x Light Anti-Fighter Ion Cannons: 2 / 1.67s / 3.4km
+TEXT_TOOLTIP_PROVIDENCE_DREADNOUGHT_WEAP4,3x Medium Quad Laser Cannons: 2 / 0.44s / 4.4km
+TEXT_TOOLTIP_PROVIDENCE_DREADNOUGHT_WEAP5,8x Assault Concussion Missiles: 3 / 9.0s / 7.4km
+TEXT_UNIT_AUXILIA,Auxilia Pursuit Destroyer
 TEXT_UNIT_C9979,C-9979 Carrier
+TEXT_UNIT_DH_OMNI,DH-Omni Support Vessel
+TEXT_UNIT_DIAMOND,Diamond Cruiser
 TEXT_UNIT_LUCREHULKBATTLESHIP,Lucrehulk Battleship

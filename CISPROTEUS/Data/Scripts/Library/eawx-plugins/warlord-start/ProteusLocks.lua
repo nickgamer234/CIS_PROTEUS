@@ -17,13 +17,13 @@ return {
 		--Custom unit entries per faction
 
 		--Yevethan Proteus added units
-		 "CSA_B1_Droid_Company", "B2_Droid_Company", "Dro", "AAT_Company", "Munificent", "Recusant_Light_Destroyer", "Providence_Carrier_Destroyer", "Destroyer_Droid_II_Company", "Bulwark_I", "Bulwark_II", "Captor", "Lucrehulk_Battleship", "Auxilia", "STAP_Company", "Magna_Octuptarra_Company", "HMP_Company", "OG9_Company", "Hailfire_Company", "HAGM_Company", "Crab_Droid_Company", "HAML_Company", "MTT_Company", "DH_Omni", "PAC_Company", "Pursuer_Enforcement_Ship_Group", "Diamond_Frigate", "Hardcell", "Munifex", "C9979_Carrier", "Lucrehulk_Carrier", "Providence_Dreadnought", "Subjugator", "Surveyor_Frigate", "Active_Frigate", "Thrustship_Corvette", "Thrustship_Corvette_Torpedo", "Thrustship_Tender", "T_Type_Thrustship", "Victory_I_Frigate", "C_type_Thrustship", "Gladiator_II", "Sorannan_Star_Destroyer", "Assertor_Star_Dreadnought", "Imperial_Boarding_Shuttle",
+		--  "CSA_B1_Droid_Company", "B2_Droid_Company", "Dro", "AAT_Company", "Munificent", "Recusant_Light_Destroyer", "Providence_Carrier_Destroyer", "Destroyer_Droid_II_Company", "Bulwark_I", "Bulwark_II", "Captor", "Lucrehulk_Battleship", "Auxilia", "STAP_Company", "Magna_Octuptarra_Company", "HMP_Company", "OG9_Company", "Hailfire_Company", "HAGM_Company", "Crab_Droid_Company", "HAML_Company", "MTT_Company", "DH_Omni", "PAC_Company", "Pursuer_Enforcement_Ship_Group", "Diamond_Frigate", "Hardcell", "Munifex", "C9979_Carrier", "Lucrehulk_Carrier", "Providence_Dreadnought", "Subjugator",
+		 "Surveyor_Frigate", "Active_Frigate", "Thrustship_Corvette", "Thrustship_Corvette_Torpedo", "Thrustship_Tender", "T_Type_Thrustship", "Victory_I_Frigate", "C_type_Thrustship", "Gladiator_II", "Sorannan_Star_Destroyer", "Assertor_Star_Dreadnought", "Imperial_Boarding_Shuttle",
 		 "Black_15", "Yevetha_Capital", "Yevetha_Office", "Y_Ground_Barracks", "Y_Ground_Heavy_Vehicle_Factory", "Y_Ground_Advanced_Vehicle_Factory",
-		 "Yevethan_Soldier_Company", "Yevethan_Purge_Soldier_Company", "Yevethan_Enforcement_Soldier_Company",
+	     "Yevethan_Soldier_Company", "Yevethan_Purge_Soldier_Company", "Yevethan_Enforcement_Soldier_Company",
 		 "AT_ST_A_Company",
 		 "Imperial_Light_Mobile_Artillery_Company",
 		 "B5_Juggernaut_Company", "Yevethan_AT_AT_Walker_Company",
 
-		--Planned Corellian Proteus added units
-		--"",
+
 }

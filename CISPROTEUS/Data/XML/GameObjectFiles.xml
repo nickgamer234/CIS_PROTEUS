@@ -172,6 +172,8 @@
 
 	<File>Heroes\Hutt_Heroes.xml</File>
 	<File>Heroes\Hutt_Heroes_CoreSaga.xml</File>
+	<File>Heroes\CIS_Heroes_Army.xml</File>
+	<File>Heroes\CIS_Heroes_Fleet.xml</File>
 
 	<File>Heroes\Independent_Heroes.xml</File>
 	<File>Heroes\Independent_Heroes_CoreSaga.xml</File>

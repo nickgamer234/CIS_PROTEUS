@@ -1,0 +1,2091 @@
+<?xml version='1.0' encoding='ASCII'?>
+<Yevethan_Ground>
+
+	<!-- Template -->
+	
+	<GroundInfantry Name="Yevethan_Soldier">
+		<Text_ID>TEXT_UNIT_YEVETHAN_SOLDIER</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_INFANTRY</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_YEVETHAN_SOLDIER
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK 
+		TEXT_TOOLTIP_YEVETHAN_SOLDIER_HEALTH
+		TEXT_TOOLTIP_YEVETHAN_SOLDIER_MOVE 
+		TEXT_TOOLTIP_YEVETHAN_SOLDIER_WEAP1
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_CAPABILITY_INFANTRY_CAPTURE
+		</Encyclopedia_Text>
+		<Icon_Name>I_BUTTON_YEVETHAN_SOLDIER.tga</Icon_Name>
+
+		<No_Colorization_Color/>
+		<Land_Model_Name>Yevethan_trooper.ALO</Land_Model_Name>
+		<!-- <Land_Terrain_Model_Mapping>
+			Temperate, 			Yevethan_trooper.ALO,
+			Urban, 				Yevethan_trooper.ALO,
+			Arctic, 			Yevethan_trooper.ALO,
+			Volcanic, 			Yevethan_trooper.ALO,
+			Desert, 			Yevethan_trooper.ALO,
+			Forest, 			Yevethan_trooper.ALO,
+			Swamp, 				Yevethan_trooper.ALO
+		</Land_Terrain_Model_Mapping> -->
+		<Land_Model_Anim_Override_Name>TrainedInfantry.alo</Land_Model_Anim_Override_Name>
+		
+		<Scale_Factor>1.1</Scale_Factor>
+		<Select_Box_Scale>12</Select_Box_Scale>
+		<Select_Box_Z_Adjust>3.0f</Select_Box_Z_Adjust>
+		<Mouse_Collide_Override_Sphere_Radius> 10.0 </Mouse_Collide_Override_Sphere_Radius>
+		<Size_Value>10</Size_Value>
+
+		<Loop_Idle_Anim_00>No</Loop_Idle_Anim_00>
+		<Movement_Animation_Speed> 1.0 </Movement_Animation_Speed>
+		<Rotation_Animation_Speed> 20.0 </Rotation_Animation_Speed>
+		<Walk_Animation_Speed> .40 </Walk_Animation_Speed>
+		<Crouch_Animation_Speed> .537 </Crouch_Animation_Speed>
+
+		<Mass>1.0</Mass>
+		<Max_Speed>1.0</Max_Speed>
+		<OverrideAcceleration> 1.0 </OverrideAcceleration>
+		<OverrideDeceleration> 1.0 </OverrideDeceleration>
+		<Max_Rate_Of_Turn>20.0</Max_Rate_Of_Turn>
+
+		<Armor_Type> ArmourG_Infantry </Armor_Type>
+		<Tactical_Health>14</Tactical_Health>
+		<Surface_Type_Cover_Damage_Shield>.5</Surface_Type_Cover_Damage_Shield>
+
+		<Damage>0.6</Damage>
+		<AI_Combat_Power>3</AI_Combat_Power>
+		<Affiliation />
+		<Political_Control>0</Political_Control>
+
+		<Type>Walk</Type>
+		<CategoryMask> Infantry | AntiInfantry </CategoryMask>
+		<Weather_Category>Infantry</Weather_Category>
+		<Deploys>No</Deploys>
+		<Victory_Relevant>yes</Victory_Relevant>
+		<Create_Team>Yes</Create_Team>
+
+		<Tactical_Bribe_Cost>25</Tactical_Bribe_Cost>
+
+		<GalacticBehavior> SELECTABLE </GalacticBehavior>
+		<LandBehavior>SELECTABLE, ABILITY_COUNTDOWN, LANDING, SURFACE_FX,LAND_TEAM_INFANTRY_LOCOMOTOR,IDLE,WEAPON, STUNNABLE, REVEAL,HIDE_WHEN_FOGGED,DAMAGE_TRACKING,DEMOLITION</LandBehavior>
+
+		<HardPoints>HP_DXR_Rifle</HardPoints>
+
+		<Garrison_Category> Infantry </Garrison_Category>
+		<Garrison_Value>1</Garrison_Value>
+
+		<Target_Bones>Target_00</Target_Bones>
+		<Ranged_Target_Z_Adjust>0.0</Ranged_Target_Z_Adjust>
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Ground_Infantry_Turret_Target> Yes </Ground_Infantry_Turret_Target>
+		<Is_Squashable> Yes </Is_Squashable>
+		<Is_Combustible>yes</Is_Combustible>
+		<On_Fire_Speed_Modifier>1.25f</On_Fire_Speed_Modifier>
+		<Targeting_Allowed_When_Burning>no</Targeting_Allowed_When_Burning>
+		<Burning_Damage_Per_Second>0.1</Burning_Damage_Per_Second>
+
+		<Death_Fade_Time>0.25</Death_Fade_Time>
+		<Death_Persistence_Duration>0.0</Death_Persistence_Duration>
+
+		<!-- Normal red blood for Yevetha -->
+		<Death_Explosions>Organic_Infantry_Blood, Organic_Infantry_Blood_Alt, Tiny_Dud</Death_Explosions>
+		<Death_Clone>DamageL_AntiVehicleBlaster, Organic_Infantry_Blood_Explosion</Death_Clone>
+
+		<Death_Clone>Damage_Force_Lightning, Infantry_Electric_Death_Clone_00</Death_Clone>
+		<Death_Clone>Damage_Force_Lightning, Infantry_Electric_Death_Clone_01</Death_Clone>
+
+		<Death_Clone>DamageL_Disruptor, Infantry_Disruptor_Death_Clone_00</Death_Clone>
+		<Death_Clone>DamageL_Disruptor, Infantry_Disruptor_Death_Clone_01</Death_Clone>
+		<Death_Clone>DamageL_Flamer, Infantry_Fire_Death_Clone_00</Death_Clone>
+		<Death_Clone>DamageL_Flamer, Infantry_Fire_Death_Clone_01</Death_Clone>
+		<Death_Clone>DamageL_ProtonWarhead, Infantry_Fire_Death_Clone_00</Death_Clone>
+		<Death_Clone>DamageL_ProtonWarhead, Infantry_Fire_Death_Clone_01</Death_Clone>
+		<Death_Clone>DamageL_Plasma, Infantry_Plasma_Death_Clone_00</Death_Clone>
+		<Death_Clone>DamageL_Plasma, Infantry_Plasma_Death_Clone_01</Death_Clone>
+		<Death_Clone>Damage_Fire, Infantry_Fire_Death_Clone_00</Death_Clone>
+		<Death_Clone>Damage_Fire, Infantry_Fire_Death_Clone_01</Death_Clone>
+		<Death_Clone>DamageL_Ion, Infantry_Electric_Death_Clone_00</Death_Clone>
+		<Death_Clone>DamageL_Ion, Infantry_Electric_Death_Clone_01</Death_Clone>
+		<Death_Clone>Damage_Infection, Infantry_Melt_Death_Clone_00</Death_Clone>
+
+		<SFXEvent_Tactical_Build_Started> EHD_Reinforcements_En_Route </SFXEvent_Tactical_Build_Started>
+		<SFXEvent_Tactical_Build_Complete> EHD_Reinforcements_Available </SFXEvent_Tactical_Build_Complete>
+		<SFXEvent_Tactical_Build_Cancelled> EHD_Reinforcements_Cancelled  </SFXEvent_Tactical_Build_Cancelled>
+
+		<SFXEvent_Select>Unit_Select_Noghri</SFXEvent_Select>
+		<SFXEvent_Move>Unit_Move_Noghri</SFXEvent_Move>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Noghri</SFXEvent_Fleet_Move>
+		<SFXEvent_Attack>Unit_Attack_Noghri</SFXEvent_Attack>
+		<SFXEvent_Assist_Move> Unit_Move_Noghri </SFXEvent_Assist_Move>
+		<SFXEvent_Assist_Attack> Unit_Attack_Noghri </SFXEvent_Assist_Attack>
+		<SFXEvent_Guard>Unit_Guard_Noghri</SFXEvent_Guard>
+
+		<Death_SFXEvent_Start_Die>Unit_Rebel_Soldier_3_Death</Death_SFXEvent_Start_Die>
+
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_LASER, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_MISSILE, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_TORPEDO, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_FIGHTER_BAY, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_DUMMY_ART, null </SFXEvent_Hardpoint_Destroyed>
+
+		<Presence_Induced_Animations>
+			Attention, 
+				Kan_Nakkar, Raalk_AT_AT_Walker,
+			Celebrate,
+				Template_Planetary_Shield_Death_Clone,
+				EB_OfficerAcademy_Death_Clone,
+				W_HUTTPALACE_VARIANT_Death_Clone,
+				Cody_Death_Clone,
+				Stormtrooper_Hero_Death_Clone,
+				Dark_Stormtrooper_Hero_Death_Clone,
+				Aratech_Battle_Platform_Death_Clone,
+				Hutt_Pod_Walker_Walker_Death_Clone_00,
+				Hutt_Pod_Walker_Walker_Death_Clone_01,
+				Hutt_Pod_Walker_Walker_Death_Clone_02,
+				Hutt_Pod_Walker_Walker_Death_Clone_03,
+				Imperial_AT_AT_Walker_Cable_Attack_Death_Clone,
+				Imperial_AT_AT_Walker_Death_Clone_00,
+				Imperial_AT_AT_Walker_Death_Clone_01,
+				Imperial_AT_AT_Walker_Death_Clone_02,
+				Imperial_AT_AT_Walker_Turbolaser_Refit_Cable_Attack_Death_Clone,
+				Imperial_AT_AT_Walker_Turbolaser_Refit_Death_Clone_00,
+				Imperial_AT_AT_Walker_Turbolaser_Refit_Death_Clone_01,
+				Imperial_AT_AT_Walker_Turbolaser_Refit_Death_Clone_02,
+				AT_MP_Walker_Death_Clone_00,
+				AT_MP_Walker_Death_Clone_01,
+				AT_ST_Walker_Death_Clone_00,
+				AT_ST_Walker_Death_Clone_01,
+				AT_ST_A_Walker_Death_Clone_00,
+				AT_ST_A_Walker_Death_Clone_01,
+				SPMAG_Walker_Death_Clone,
+				SPMAG_Walker_Telekinesis_Death_Clone,
+				SPMAT_Walker_Death_Clone,
+				SPMAT_Walker_Telekinesis_Death_Clone,
+				B5_Juggernaut_Death_Clone,
+				B5_Juggernaut_Deployed_Death_Clone,
+		</Presence_Induced_Animations>
+
+		<MovementClass> Infantry </MovementClass>
+		<Space_Layer> Land </Space_Layer>
+		<UnitCollisionClass> Infantry </UnitCollisionClass>
+		<OccupationStyle>1x1</OccupationStyle>
+		<Custom_Hard_XExtent> 2.0 </Custom_Hard_XExtent>
+		<Custom_Hard_YExtent> 2.0 </Custom_Hard_YExtent>
+		<CanCellStack>yes</CanCellStack>
+		<FormationGrouping>Standard</FormationGrouping>
+		<FormationSpacing> .3 </FormationSpacing>
+		<FormationOrder> 2 </FormationOrder>
+		<WaitsForFormationFormup>false</WaitsForFormationFormup>
+		<MinimumPushReturnDistance> 10 </MinimumPushReturnDistance>
+
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Sensor_Range>20</Sensor_Range>
+
+		<Land_FOW_Reveal_Range>250</Land_FOW_Reveal_Range>
+
+		<Targeting_Max_Attack_Distance>300.0</Targeting_Max_Attack_Distance>
+		<Targeting_Min_Attack_Distance>0.0</Targeting_Min_Attack_Distance>
+		<Idle_Chase_Range>50.0</Idle_Chase_Range>
+		<Guard_Chase_Range>200.0</Guard_Chase_Range>
+		<Attack_Move_Response_Range>150.0</Attack_Move_Response_Range>
+		<Autonomous_Move_Extension_Vs_Attacker>100.0</Autonomous_Move_Extension_Vs_Attacker>
+
+		<Targeting_Priority_Set>AntiInfantry</Targeting_Priority_Set>
+		<Targeting_Stickiness_Time_Threshold>5.0</Targeting_Stickiness_Time_Threshold>
+
+		<Has_Land_Evaluator>false</Has_Land_Evaluator>
+
+		<SurfaceFX_Name>Generic_Footprint, Infantry_Terrain_Modifier, High_Ground</SurfaceFX_Name>
+		<Custom_Soft_Footprint_Radius> 3.5 </Custom_Soft_Footprint_Radius>
+		<Blob_Shadow_Below_Detail_Level>3</Blob_Shadow_Below_Detail_Level>
+		<Blob_Shadow_Scale>5.0, 5.0</Blob_Shadow_Scale>
+		<Blob_Shadow_Material_Name>Generic_Shadow</Blob_Shadow_Material_Name>
+		<Blob_Shadow_Bone_Name>B_Chest</Blob_Shadow_Bone_Name>
+		<Occlusion_Silhouette_Enabled>1</Occlusion_Silhouette_Enabled>
+		<No_Reflection_Below_Detail_Level>99</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>99</No_Refraction_Below_Detail_Level>
+
+		<LOD_Bias>5</LOD_Bias>
+		
+		<Energy_Capacity>0</Energy_Capacity>
+		<Energy_Refresh_Rate>0</Energy_Refresh_Rate>
+		
+		<Turret_Rotate_Extent_Degrees>45.0</Turret_Rotate_Extent_Degrees>
+		<Turret_Elevate_Extent_Degrees>120.0</Turret_Elevate_Extent_Degrees>
+		<Turret_Bone_Name>Turret_00</Turret_Bone_Name>
+		<Barrel_Bone_Name>Barrel_00</Barrel_Bone_Name>
+		<Turret_Rotate_Speed>50.0</Turret_Rotate_Speed>
+		<Apply_Z_Turret_Rotate_To_Axis>2</Apply_Z_Turret_Rotate_To_Axis>
+		<Apply_Y_Turret_Rotate_To_Axis>1</Apply_Y_Turret_Rotate_To_Axis>
+		<Turret_Targets_Ground_Vehicles>2</Turret_Targets_Ground_Vehicles>
+		<Turret_Targets_Ground_Infantry>1</Turret_Targets_Ground_Infantry>
+		<Turret_Targets_Air_Vehicles>3</Turret_Targets_Air_Vehicles>
+		<Turret_Targets_Anything_Else>4</Turret_Targets_Anything_Else>
+
+		<Property_Flags>Fodder</Property_Flags>
+		
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>SPREAD_OUT</Type>
+				<Mod_Multiplier>SPEED_MULTIPLIER,	 0.5f</Mod_Multiplier>
+				<Mod_Multiplier>TAKE_DAMAGE_MULTIPLIER, 0.75f</Mod_Multiplier>
+				<SFXEvent_GUI_Unit_Ability_Activated>Unit_Guard_Noghri</SFXEvent_GUI_Unit_Ability_Activated>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+	</GroundInfantry>
+
+	<!-- Soldier -->
+
+	<GroundInfantry Name="Yevethan_Soldier_Grenadier">
+		<Variant_Of_Existing_Type>Yevethan_Soldier</Variant_Of_Existing_Type>
+		<Text_ID>TEXT_UNIT_YEVETHAN_SOLDIER_GRENADIER</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_YEVETHAN_SOLDIER
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK 
+		TEXT_TOOLTIP_YEVETHAN_SOLDIER_HEALTH
+		TEXT_TOOLTIP_YEVETHAN_SOLDIER_MOVE 
+		TEXT_TOOLTIP_YEVETHAN_SOLDIER_WEAP1
+		TEXT_TOOLTIP_YEVETHAN_SOLDIER_WEAP4
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_CAPABILITY_INFANTRY_CAPTURE
+		</Encyclopedia_Text>
+		
+		<AI_Combat_Power>3</AI_Combat_Power>
+
+		<!-- Grenade throw -->
+		<Projectile_Types>Proj_Light_Concussion_Grenade_Infantry</Projectile_Types>
+		<Projectile_Fire_Recharge_Seconds>15.0</Projectile_Fire_Recharge_Seconds>
+		<Projectile_Fire_Pulse_Count>1</Projectile_Fire_Pulse_Count>
+		<Projectile_Fire_Pulse_Delay_Seconds>0.2</Projectile_Fire_Pulse_Delay_Seconds>
+		<Projectile_Appearance_Delay_Frames> 8 </Projectile_Appearance_Delay_Frames>
+		<SFXEvent_Fire>Unit_Grenade_Throw</SFXEvent_Fire>
+
+		<!-- <Land_Model_Name>Yevethan_trooper_Grenadier.alo</Land_Model_Name> -->
+		<!-- <Land_Model_Anim_Override_Name>TrainedInfantry.alo</Land_Model_Anim_Override_Name> -->
+		<!-- <Land_Terrain_Model_Mapping> -->
+			<!-- Temperate, 			Yevethan_trooper_Grenadier.alo, -->
+			<!-- Urban, 				Yevethan_trooper_Grenadier.alo, -->
+			<!-- Arctic, 			Yevethan_trooper_Grenadier.alo, -->
+			<!-- Volcanic, 			Yevethan_trooper_Grenadier.alo, -->
+			<!-- Desert, 			Yevethan_trooper_Grenadier.alo, -->
+			<!-- Forest, 			Yevethan_trooper_Grenadier.alo, -->
+			<!-- Swamp, 				Yevethan_trooper_Grenadier.alo -->
+		<!-- </Land_Terrain_Model_Mapping> -->
+
+		<Highlight_Blob_Material_Name>Highlight_Infantry_Grenadier</Highlight_Blob_Material_Name>
+	</GroundInfantry>
+	
+	<GroundInfantry Name="Yevethan_Soldier_HAT">
+		<Variant_Of_Existing_Type>Yevethan_Soldier</Variant_Of_Existing_Type>
+		<Text_ID>TEXT_UNIT_YEVETHAN_SOLDIER_AT_HEAVY</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_YEVETHAN_SOLDIER
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK 
+		TEXT_TOOLTIP_YEVETHAN_SOLDIER_HEALTH
+		TEXT_TOOLTIP_YEVETHAN_SOLDIER_MOVE 
+		TEXT_TOOLTIP_YEVETHAN_SOLDIER_WEAP3
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_CAPABILITY_INFANTRY_CAPTURE
+		</Encyclopedia_Text>
+		
+		<AI_Combat_Power>4</AI_Combat_Power>
+		
+		<!-- <Land_Model_Name>Yevethan_trooper_Rocket.alo</Land_Model_Name> -->
+		<!-- <Land_Model_Anim_Override_Name>RocketInfantry.alo</Land_Model_Anim_Override_Name> -->
+		<!-- <Land_Terrain_Model_Mapping> -->
+			<!-- Temperate, 			Yevethan_trooper_Rocket.alo, -->
+			<!-- Urban, 				Yevethan_trooper_Rocket.alo, -->
+			<!-- Arctic, 			Yevethan_trooper_Rocket.alo, -->
+			<!-- Volcanic, 			Yevethan_trooper_Rocket.alo, -->
+			<!-- Desert, 			Yevethan_trooper_Rocket.alo, -->
+			<!-- Forest, 			Yevethan_trooper_Rocket.alo, -->
+			<!-- Swamp, 				Yevethan_trooper_Rocket.alo -->
+		<!-- </Land_Terrain_Model_Mapping> -->
+
+		<HardPoints>HP_MiniMag</HardPoints>
+		<Targeting_Max_Attack_Distance>400.0</Targeting_Max_Attack_Distance>
+
+		<CategoryMask>Infantry | AntiVehicle</CategoryMask>
+
+		<Highlight_Blob_Material_Name>Highlight_Infantry_Rocket</Highlight_Blob_Material_Name>
+		
+		<Targeting_Priority_Set> AntiVehicle </Targeting_Priority_Set>
+	</GroundInfantry>
+	
+	<GroundInfantry Name="Yevethan_Soldier_Sergeant">
+		<Variant_Of_Existing_Type>Yevethan_Soldier</Variant_Of_Existing_Type>
+		<Text_ID>TEXT_UNIT_YEVETHAN_SOLDIER_SERGEANT</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_YEVETHAN_SOLDIER
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK 
+		TEXT_TOOLTIP_YEVETHAN_SOLDIER_SERGEANT_HEALTH
+		TEXT_TOOLTIP_YEVETHAN_SOLDIER_MOVE 
+		TEXT_TOOLTIP_YEVETHAN_SOLDIER_WEAP2
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_CAPABILITY_INFANTRY_CAPTURE
+		</Encyclopedia_Text>
+		
+		<AI_Combat_Power>6</AI_Combat_Power>
+
+		<!-- <Land_Model_Name>Yevethan_trooper_Sergeant.alo</Land_Model_Name> -->
+		<!-- <Land_Model_Anim_Override_Name>TrainedInfantry.alo</Land_Model_Anim_Override_Name> -->
+		<!-- <Land_Terrain_Model_Mapping> -->
+			<!-- Temperate, 			Yevethan_trooper_Sergeant.alo, -->
+			<!-- Urban, 				Yevethan_trooper_Sergeant.alo, -->
+			<!-- Arctic, 			Yevethan_trooper_Sergeant.alo, -->
+			<!-- Volcanic, 			Yevethan_trooper_Sergeant.alo, -->
+			<!-- Desert, 			Yevethan_trooper_Sergeant.alo, -->
+			<!-- Forest, 			Yevethan_trooper_Sergeant.alo, -->
+			<!-- Swamp, 				Yevethan_trooper_Sergeant.alo -->
+		<!-- </Land_Terrain_Model_Mapping> -->
+		
+		<Tactical_Health> 17 </Tactical_Health>
+		
+		<HardPoints> HP_DLT_19_HMG </HardPoints>
+
+       	<Highlight_Blob_Material_Name>Highlight_Infantry_SGT</Highlight_Blob_Material_Name>
+	</GroundInfantry>
+
+	<GroundInfantry Name="Yevethan_Soldier_Lieutenant">
+		<Variant_Of_Existing_Type>Yevethan_Soldier</Variant_Of_Existing_Type>
+		<Text_ID>TEXT_UNIT_YEVETHAN_SOLDIER_LIEUTENANT</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_YEVETHAN_SOLDIER
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK 
+		TEXT_TOOLTIP_YEVETHAN_SOLDIER_LIEUTENANT_HEALTH
+		TEXT_TOOLTIP_YEVETHAN_SOLDIER_MOVE 
+		TEXT_TOOLTIP_YEVETHAN_SOLDIER_WEAP1
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_CAPABILITY_INFANTRY_CAPTURE
+		</Encyclopedia_Text>
+		
+		<AI_Combat_Power>6</AI_Combat_Power>
+
+		<!-- <Land_Model_Name>Yevethan_trooper_Officer.alo</Land_Model_Name> -->
+		<!-- <Land_Model_Anim_Override_Name>TrainedInfantry.alo</Land_Model_Anim_Override_Name> -->
+		<!-- <Land_Terrain_Model_Mapping> -->
+			<!-- Temperate, 			Yevethan_trooper_Officer.alo, -->
+			<!-- Urban, 				Yevethan_trooper_Officer.alo, -->
+			<!-- Arctic, 			Yevethan_trooper_Officer.alo, -->
+			<!-- Volcanic, 			Yevethan_trooper_Officer.alo, -->
+			<!-- Desert, 			Yevethan_trooper_Officer.alo, -->
+			<!-- Forest, 			Yevethan_trooper_Officer.alo, -->
+			<!-- Swamp, 				Yevethan_trooper_Officer.alo -->
+		<!-- </Land_Terrain_Model_Mapping> -->
+		
+		<Tactical_Health> 20 </Tactical_Health>
+		
+		<HardPoints> HP_DXR_Rifle_Skilled </HardPoints>
+
+       	<Highlight_Blob_Material_Name>Highlight_Infantry_LT</Highlight_Blob_Material_Name>
+	</GroundInfantry>
+
+	<!-- Purge -->
+
+	<GroundInfantry Name="Yevethan_Purge_Soldier">
+		<Variant_Of_Existing_Type>Yevethan_Soldier</Variant_Of_Existing_Type>
+		<Text_ID>TEXT_UNIT_YEVETHAN_PURGE_SOLDIER</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_YEVETHAN_PURGE_SOLDIER
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK 
+		TEXT_TOOLTIP_YEVETHAN_PURGE_SOLDIER_HEALTH
+		TEXT_TOOLTIP_YEVETHAN_SOLDIER_MOVE 
+		TEXT_TOOLTIP_YEVETHAN_PURGE_SOLDIER_WEAP1
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_CAPABILITY_INFANTRY_CAPTURE
+		</Encyclopedia_Text>
+		
+		<AI_Combat_Power>3</AI_Combat_Power>
+
+		<Land_Model_Name>Yevethan_purge_trooper.ALO</Land_Model_Name>
+		<Land_Model_Anim_Override_Name>TrainedInfantry.alo</Land_Model_Anim_Override_Name>
+		<Icon_Name>I_BUTTON_YEVETHAN_PURGE_SOLDIER.tga</Icon_Name>
+		
+		<Tactical_Health> 15 </Tactical_Health>
+		
+		<HardPoints> HP_E11_Carbine </HardPoints>
+
+	</GroundInfantry>
+
+	<GroundInfantry Name="Yevethan_Purge_Soldier_Flechette">
+		<Variant_Of_Existing_Type>Yevethan_Purge_Soldier</Variant_Of_Existing_Type>
+		<Text_ID>TEXT_UNIT_YEVETHAN_PURGE_SOLDIER_AT_LIGHT</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_YEVETHAN_PURGE_SOLDIER
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK 
+		TEXT_TOOLTIP_YEVETHAN_PURGE_SOLDIER_HEALTH
+		TEXT_TOOLTIP_YEVETHAN_SOLDIER_MOVE 
+		TEXT_TOOLTIP_YEVETHAN_PURGE_SOLDIER_WEAP2
+		TEXT_TOOLTIP_YEVETHAN_PURGE_SOLDIER_WEAP2A
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_CAPABILITY_INFANTRY_CAPTURE
+		</Encyclopedia_Text>
+
+		<HardPoints> HP_FC1, HP_FC1_Extra </HardPoints>
+		
+		<AI_Combat_Power>4</AI_Combat_Power>
+
+	</GroundInfantry>
+
+	<GroundInfantry Name="Yevethan_Purge_Soldier_Disruptor">
+		<Variant_Of_Existing_Type>Yevethan_Purge_Soldier</Variant_Of_Existing_Type>
+		<Text_ID>TEXT_UNIT_YEVETHAN_PURGE_SOLDIER_DISRUPTOR</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_YEVETHAN_PURGE_SOLDIER
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK 
+		TEXT_TOOLTIP_YEVETHAN_PURGE_SOLDIER_HEALTH
+		TEXT_TOOLTIP_YEVETHAN_SOLDIER_MOVE 
+		TEXT_TOOLTIP_YEVETHAN_PURGE_SOLDIER_WEAP3
+		TEXT_TOOLTIP_YEVETHAN_PURGE_SOLDIER_WEAP5
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_CAPABILITY_INFANTRY_CAPTURE
+		</Encyclopedia_Text>
+
+		<HardPoints> HP_DXR_6_Disruptor </HardPoints>
+		
+		<AI_Combat_Power>3</AI_Combat_Power>
+
+		<!-- Grenade throw -->
+		<Projectile_Types>Proj_Light_Thermal_Grenade_Infantry</Projectile_Types>
+		<Projectile_Fire_Recharge_Seconds>15.0</Projectile_Fire_Recharge_Seconds>
+		<Projectile_Fire_Pulse_Count>1</Projectile_Fire_Pulse_Count>
+		<Projectile_Fire_Pulse_Delay_Seconds>0.2</Projectile_Fire_Pulse_Delay_Seconds>
+		<Projectile_Appearance_Delay_Frames> 8 </Projectile_Appearance_Delay_Frames>
+		<SFXEvent_Fire>Unit_Grenade_Throw</SFXEvent_Fire>
+
+	</GroundInfantry>
+	
+	<GroundInfantry Name="Yevethan_Purge_Soldier_Flamer">
+		<Variant_Of_Existing_Type>Yevethan_Purge_Soldier</Variant_Of_Existing_Type>
+		<Text_ID>TEXT_UNIT_YEVETHAN_PURGE_SOLDIER_FLAMER</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_YEVETHAN_PURGE_SOLDIER
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK 
+		TEXT_TOOLTIP_YEVETHAN_PURGE_SOLDIER_HEALTH
+		TEXT_TOOLTIP_YEVETHAN_SOLDIER_MOVE 
+		TEXT_TOOLTIP_YEVETHAN_PURGE_SOLDIER_WEAP4
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_CAPABILITY_INFANTRY_CAPTURE
+		</Encyclopedia_Text>
+		
+		<AI_Combat_Power>3</AI_Combat_Power>
+
+		<HardPoints> HP_BT_X42_Flamer_Hand </HardPoints>
+
+		<Highlight_Blob_Material_Name>Highlight_Infantry_Flamer</Highlight_Blob_Material_Name>
+		
+		<Targeting_Priority_Set> AntiInfantryStructure </Targeting_Priority_Set>
+
+	</GroundInfantry>
+
+	<GroundInfantry Name="Yevethan_Purge_Soldier_Sergeant">
+		<Variant_Of_Existing_Type>Yevethan_Purge_Soldier</Variant_Of_Existing_Type>
+		<Text_ID>TEXT_UNIT_YEVETHAN_PURGE_SOLDIER_SERGEANT</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_YEVETHAN_PURGE_SOLDIER
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK 
+		TEXT_TOOLTIP_YEVETHAN_PURGE_SOLDIER_SERGEANT_HEALTH
+		TEXT_TOOLTIP_YEVETHAN_SOLDIER_MOVE 
+		TEXT_TOOLTIP_YEVETHAN_PURGE_SOLDIER_WEAP1
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_CAPABILITY_INFANTRY_CAPTURE
+		</Encyclopedia_Text>
+
+		<HardPoints> HP_E11_Carbine_Skilled </HardPoints>
+
+		<Tactical_Health> 18 </Tactical_Health>
+		
+		<AI_Combat_Power>6</AI_Combat_Power>
+
+		<Highlight_Blob_Material_Name>Highlight_Infantry_SGT</Highlight_Blob_Material_Name>
+
+	</GroundInfantry>
+
+	<GroundInfantry Name="Yevethan_Purge_Soldier_Lieutenant">
+		<Variant_Of_Existing_Type>Yevethan_Purge_Soldier</Variant_Of_Existing_Type>
+		<Text_ID>TEXT_UNIT_YEVETHAN_PURGE_SOLDIER_LIEUTENANT</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_YEVETHAN_PURGE_SOLDIER
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK 
+		TEXT_TOOLTIP_YEVETHAN_PURGE_SOLDIER_LIEUTENANT_HEALTH
+		TEXT_TOOLTIP_YEVETHAN_SOLDIER_MOVE 
+		TEXT_TOOLTIP_YEVETHAN_PURGE_SOLDIER_WEAP1
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_CAPABILITY_INFANTRY_CAPTURE
+		</Encyclopedia_Text>
+
+		<HardPoints> HP_E11_Carbine_Skilled </HardPoints>
+
+		<Tactical_Health> 21 </Tactical_Health>
+		
+		<AI_Combat_Power>6</AI_Combat_Power>
+
+		<Highlight_Blob_Material_Name>Highlight_Infantry_LT</Highlight_Blob_Material_Name>
+
+	</GroundInfantry>
+
+	<!-- Enforcement -->
+
+	<GroundInfantry Name="Yevethan_Enforcement_Soldier">
+		<Variant_Of_Existing_Type>Yevethan_Soldier</Variant_Of_Existing_Type>
+		<Text_ID>TEXT_UNIT_YEVETHAN_ENFORCEMENT_SOLDIER</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_YEVETHAN_ENFORCEMENT_SOLDIER
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK 
+		TEXT_TOOLTIP_YEVETHAN_ENFORCEMENT_SOLDIER_HEALTH
+		TEXT_TOOLTIP_YEVETHAN_SOLDIER_MOVE 
+		TEXT_TOOLTIP_YEVETHAN_ENFORCEMENT_SOLDIER_WEAP1
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_CAPABILITY_INFANTRY_CAPTURE
+		</Encyclopedia_Text>
+		
+		<AI_Combat_Power>3</AI_Combat_Power>
+
+		<Land_Model_Name>Yevethan_Enforcement_trooper.ALO</Land_Model_Name>
+		<Land_Model_Anim_Override_Name>TrainedInfantry.alo</Land_Model_Anim_Override_Name>
+		<Icon_Name>I_BUTTON_YEVETHAN_ENFORCEMENT_SOLDIER.tga</Icon_Name>
+		
+		<Tactical_Health> 16 </Tactical_Health>
+		
+		<HardPoints> HP_CR2_SMG_Unskilled </HardPoints>
+
+	</GroundInfantry>
+
+	<GroundInfantry Name="Yevethan_Enforcement_Soldier_Grenadier">
+		<Variant_Of_Existing_Type>Yevethan_Enforcement_Soldier</Variant_Of_Existing_Type>
+		<Text_ID>TEXT_UNIT_YEVETHAN_ENFORCEMENT_SOLDIER_GRENADIER</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_YEVETHAN_ENFORCEMENT_SOLDIER
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK 
+		TEXT_TOOLTIP_YEVETHAN_ENFORCEMENT_SOLDIER_HEALTH
+		TEXT_TOOLTIP_YEVETHAN_SOLDIER_MOVE 
+		TEXT_TOOLTIP_YEVETHAN_ENFORCEMENT_SOLDIER_WEAP1
+		TEXT_TOOLTIP_YEVETHAN_ENFORCEMENT_SOLDIER_WEAP4
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_CAPABILITY_INFANTRY_CAPTURE
+		</Encyclopedia_Text>
+		
+		<AI_Combat_Power>3</AI_Combat_Power>
+
+		<!-- Grenade throw -->
+		<Projectile_Types>Proj_Light_Flame_Grenade_Infantry</Projectile_Types>
+		<Projectile_Fire_Recharge_Seconds>15.0</Projectile_Fire_Recharge_Seconds>
+		<Projectile_Fire_Pulse_Count>1</Projectile_Fire_Pulse_Count>
+		<Projectile_Fire_Pulse_Delay_Seconds>0.2</Projectile_Fire_Pulse_Delay_Seconds>
+		<Projectile_Appearance_Delay_Frames> 8 </Projectile_Appearance_Delay_Frames>
+		<SFXEvent_Fire>Unit_Grenade_Throw</SFXEvent_Fire>
+
+		<Highlight_Blob_Material_Name>Highlight_Infantry_Grenadier</Highlight_Blob_Material_Name>
+	</GroundInfantry>
+
+	<GroundInfantry Name="Yevethan_Enforcement_Soldier_Gunner">
+		<Variant_Of_Existing_Type>Yevethan_Enforcement_Soldier</Variant_Of_Existing_Type>
+		<Text_ID>TEXT_UNIT_YEVETHAN_ENFORCEMENT_SOLDIER_GUNNER</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_YEVETHAN_ENFORCEMENT_SOLDIER
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK 
+		TEXT_TOOLTIP_YEVETHAN_ENFORCEMENT_SOLDIER_HEALTH
+		TEXT_TOOLTIP_YEVETHAN_SOLDIER_MOVE 
+		TEXT_TOOLTIP_YEVETHAN_ENFORCEMENT_SOLDIER_WEAP2
+		TEXT_TOOLTIP_YEVETHAN_ENFORCEMENT_SOLDIER_WEAP5
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_CAPABILITY_INFANTRY_CAPTURE
+		</Encyclopedia_Text>
+
+		<HardPoints> HP_T21_LMG </HardPoints>
+		
+		<AI_Combat_Power>3</AI_Combat_Power>
+
+		<!-- Grenade throw -->
+		<Projectile_Types>Proj_Light_Ion_Grenade_Infantry</Projectile_Types>
+		<Projectile_Fire_Recharge_Seconds>15.0</Projectile_Fire_Recharge_Seconds>
+		<Projectile_Fire_Pulse_Count>1</Projectile_Fire_Pulse_Count>
+		<Projectile_Fire_Pulse_Delay_Seconds>0.2</Projectile_Fire_Pulse_Delay_Seconds>
+		<Projectile_Appearance_Delay_Frames> 8 </Projectile_Appearance_Delay_Frames>
+		<SFXEvent_Fire>Unit_Grenade_Throw</SFXEvent_Fire>
+
+	</GroundInfantry>
+
+	<GroundInfantry Name="Yevethan_Enforcement_Soldier_HAT">
+		<Variant_Of_Existing_Type>Yevethan_Enforcement_Soldier</Variant_Of_Existing_Type>
+		<Text_ID>TEXT_UNIT_YEVETHAN_ENFORCEMENT_SOLDIER_GUNNER</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_YEVETHAN_ENFORCEMENT_SOLDIER
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK 
+		TEXT_TOOLTIP_YEVETHAN_ENFORCEMENT_SOLDIER_HEALTH
+		TEXT_TOOLTIP_YEVETHAN_SOLDIER_MOVE 
+		TEXT_TOOLTIP_YEVETHAN_ENFORCEMENT_SOLDIER_WEAP3
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_CAPABILITY_INFANTRY_CAPTURE
+		</Encyclopedia_Text>
+		
+		<AI_Combat_Power>4</AI_Combat_Power>
+
+		<HardPoints>HP_MiniMag</HardPoints>
+		<Targeting_Max_Attack_Distance>400.0</Targeting_Max_Attack_Distance>
+
+		<CategoryMask>Infantry | AntiVehicle</CategoryMask>
+
+		<Highlight_Blob_Material_Name>Highlight_Infantry_Rocket</Highlight_Blob_Material_Name>
+		
+		<Targeting_Priority_Set> AntiVehicle </Targeting_Priority_Set>
+
+	</GroundInfantry>
+
+	<GroundInfantry Name="Yevethan_Enforcement_Soldier_Sergeant">
+		<Variant_Of_Existing_Type>Yevethan_Enforcement_Soldier</Variant_Of_Existing_Type>
+		<Text_ID>TEXT_UNIT_YEVETHAN_ENFORCEMENT_SOLDIER_SERGEANT</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_YEVETHAN_ENFORCEMENT_SOLDIER
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK 
+		TEXT_TOOLTIP_YEVETHAN_ENFORCEMENT_SOLDIER_SERGEANT_HEALTH
+		TEXT_TOOLTIP_YEVETHAN_SOLDIER_MOVE 
+		TEXT_TOOLTIP_YEVETHAN_ENFORCEMENT_SOLDIER_WEAP1
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_CAPABILITY_INFANTRY_CAPTURE
+		</Encyclopedia_Text>
+		
+		<AI_Combat_Power>6</AI_Combat_Power>
+
+		<HardPoints> HP_CR2_SMG </HardPoints>
+
+		<Tactical_Health> 19 </Tactical_Health>
+
+		<Highlight_Blob_Material_Name>Highlight_Infantry_SGT</Highlight_Blob_Material_Name>
+	</GroundInfantry>
+
+	<GroundInfantry Name="Yevethan_Enforcement_Soldier_Lieutenant">
+		<Variant_Of_Existing_Type>Yevethan_Enforcement_Soldier</Variant_Of_Existing_Type>
+		<Text_ID>TEXT_UNIT_YEVETHAN_ENFORCEMENT_SOLDIER_LIEUTENANT</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_YEVETHAN_ENFORCEMENT_SOLDIER
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK 
+		TEXT_TOOLTIP_YEVETHAN_ENFORCEMENT_SOLDIER_LIEUTENANT_HEALTH
+		TEXT_TOOLTIP_YEVETHAN_SOLDIER_MOVE 
+		TEXT_TOOLTIP_YEVETHAN_ENFORCEMENT_SOLDIER_WEAP1
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_CAPABILITY_INFANTRY_CAPTURE
+		</Encyclopedia_Text>
+		
+		<AI_Combat_Power>6</AI_Combat_Power>
+
+		<HardPoints> HP_CR2_SMG </HardPoints>
+
+		<Tactical_Health> 22 </Tactical_Health>
+
+		<Highlight_Blob_Material_Name>Highlight_Infantry_LT</Highlight_Blob_Material_Name>
+	</GroundInfantry>
+
+	<!-- Dummy spawner -->
+
+	<GroundInfantry Name="Yevethan_Soldier_Company_Dummy">
+		<Variant_Of_Existing_Type> Infantry_Dummy_Template </Variant_Of_Existing_Type>
+
+		<Land_Model_Name>Yevethan_trooper.ALO</Land_Model_Name>
+		<Land_Model_Anim_Override_Name>TrainedInfantry.alo</Land_Model_Anim_Override_Name>
+		<Icon_Name>I_BUTTON_YEVETHAN_SOLDIER.tga</Icon_Name>
+		<AI_Combat_Power>164.21</AI_Combat_Power>
+		<Affiliation>Yevetha, Imperial_Proteus</Affiliation>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>SPREAD_OUT</Type>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+	</GroundInfantry>
+
+	<GroundInfantry Name="Yevethan_Purge_Soldier_Company_Dummy">
+		<Variant_Of_Existing_Type> Infantry_Dummy_Template </Variant_Of_Existing_Type>
+
+		<Land_Model_Name>Yevethan_purge_trooper.ALO</Land_Model_Name>
+		<Land_Model_Anim_Override_Name>TrainedInfantry.alo</Land_Model_Anim_Override_Name>
+		<Icon_Name>I_BUTTON_YEVETHAN_PURGE_SOLDIER.tga</Icon_Name>
+		<AI_Combat_Power>164.21</AI_Combat_Power>
+		<Affiliation>Yevetha, Imperial_Proteus</Affiliation>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>SPREAD_OUT</Type>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+	</GroundInfantry>
+
+	<GroundInfantry Name="Yevethan_Enforcement_Soldier_Company_Dummy">
+		<Variant_Of_Existing_Type> Infantry_Dummy_Template </Variant_Of_Existing_Type>
+
+		<Land_Model_Name>Yevethan_enforcement_trooper.ALO</Land_Model_Name>
+		<Land_Model_Anim_Override_Name>TrainedInfantry.alo</Land_Model_Anim_Override_Name>
+		<Icon_Name>I_BUTTON_YEVETHAN_ENFORCEMENT_SOLDIER.tga</Icon_Name>
+		<AI_Combat_Power>164.21</AI_Combat_Power>
+		<Affiliation>Yevetha, Imperial_Proteus</Affiliation>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>SPREAD_OUT</Type>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+	</GroundInfantry>
+
+	<!-- GC Dummy Companies -->
+
+	<GroundCompany Name="Yevethan_Soldier_Company">
+
+		<Text_ID>TEXT_UNIT_YEVETHAN_SOLDIER_PLATOON</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_INFANTRY</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_YEVETHAN_SOLDIER
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_YEVETHAN_SOLDIER_COMPANY
+		TEXT_TOOLTIP_YEVETHAN_SOLDIER_SQUAD
+		TEXT_TOOLTIP_YEVETHAN_SOLDIER_HEALTH
+		TEXT_TOOLTIP_YEVETHAN_SOLDIER_MOVE
+		TEXT_TOOLTIP_YEVETHAN_SOLDIER_COMPANY_WEAP1
+		TEXT_TOOLTIP_YEVETHAN_SOLDIER_COMPANY_WEAP2
+		TEXT_TOOLTIP_YEVETHAN_SOLDIER_COMPANY_WEAP3
+		TEXT_TOOLTIP_YEVETHAN_SOLDIER_COMPANY_WEAP4
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_CAPABILITY_INFANTRY_CAPTURE
+		</Encyclopedia_Text>
+		<Icon_Name>I_BUTTON_YEVETHAN_SOLDIER.tga</Icon_Name>
+
+		<Damage>15</Damage>
+
+		<Ship_Class>infantry</Ship_Class>
+		<Formation_Priority>1</Formation_Priority>
+		<Is_Dummy>Yes</Is_Dummy>
+		<Is_Escort>yes</Is_Escort>
+
+		<GUI_Row> 1 </GUI_Row>
+		<Build_Cost_Credits>235</Build_Cost_Credits>
+		<Build_Time_Seconds>10</Build_Time_Seconds>
+		
+		<Required_Special_Structures> Y_Ground_Barracks | Cloning_HQ</Required_Special_Structures>
+		<Build_Time_Reduced_By_Multiple_Factories> Yes </Build_Time_Reduced_By_Multiple_Factories>
+		<Build_Tab_Land_Units>Yes</Build_Tab_Land_Units>
+		<Build_Initially_Locked>No</Build_Initially_Locked>
+		<Build_Can_Be_Unlocked_By_Slicer>No</Build_Can_Be_Unlocked_By_Slicer>
+		<Tactical_Build_Cost_Multiplayer>300</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>4</Tactical_Build_Time_Seconds>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<Piracy_Value_Credits>50</Piracy_Value_Credits>
+		<Score_Cost_Credits>45</Score_Cost_Credits>
+		<Population_Value>1</Population_Value>
+
+		<Required_Star_Base_Level>0</Required_Star_Base_Level>
+		<Maintenance_Cost>0.0</Maintenance_Cost>
+
+		<Tech_Level>0</Tech_Level>
+		<Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+
+		<Affiliation>Yevetha, Imperial_Proteus</Affiliation>
+
+		<Behavior>DUMMY_GROUND_COMPANY</Behavior>
+
+		<Max_Squad_Size> 1 </Max_Squad_Size>
+		<Company_Units> Yevethan_Soldier_Company_Dummy </Company_Units>
+		<Company_Transport_Unit>Imperial_Landing_Craft_Troops</Company_Transport_Unit>
+
+		<SFXEvent_Build_Started>RHD_Build_Troops</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Recruitment_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_Guard_Noghri</SFXEvent_Build_Complete>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Noghri</SFXEvent_Fleet_Move>
+	</GroundCompany>
+
+	<GroundCompany Name="Yevethan_Purge_Soldier_Company">
+
+		<Text_ID>TEXT_UNIT_YEVETHAN_PURGE_SOLDIER_PLATOON</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_INFANTRY</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_YEVETHAN_PURGE_SOLDIER
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_YEVETHAN_PURGE_SOLDIER_COMPANY
+		TEXT_TOOLTIP_YEVETHAN_PURGE_SOLDIER_SQUAD
+		TEXT_TOOLTIP_YEVETHAN_PURGE_SOLDIER_HEALTH
+		TEXT_TOOLTIP_YEVETHAN_SOLDIER_MOVE
+		TEXT_TOOLTIP_YEVETHAN_PURGE_SOLDIER_COMPANY_WEAP1
+		TEXT_TOOLTIP_YEVETHAN_PURGE_SOLDIER_COMPANY_WEAP2
+		TEXT_TOOLTIP_YEVETHAN_PURGE_SOLDIER_COMPANY_WEAP2A
+		TEXT_TOOLTIP_YEVETHAN_PURGE_SOLDIER_COMPANY_WEAP3
+		TEXT_TOOLTIP_YEVETHAN_PURGE_SOLDIER_COMPANY_WEAP4
+		TEXT_TOOLTIP_YEVETHAN_PURGE_SOLDIER_COMPANY_WEAP5
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_CAPABILITY_INFANTRY_CAPTURE
+		</Encyclopedia_Text>
+		<Icon_Name>I_BUTTON_YEVETHAN_PURGE_SOLDIER.tga</Icon_Name>
+
+		<Damage>15</Damage>
+
+		<Ship_Class>infantry</Ship_Class>
+		<Formation_Priority>1</Formation_Priority>
+		<Is_Dummy>Yes</Is_Dummy>
+		<Is_Escort>yes</Is_Escort>
+
+		<GUI_Row> 1 </GUI_Row>
+		<Build_Cost_Credits>350</Build_Cost_Credits>
+		<Build_Time_Seconds>10</Build_Time_Seconds>
+		
+		<Required_Special_Structures> Y_Ground_Barracks | Cloning_HQ</Required_Special_Structures>
+		<Build_Time_Reduced_By_Multiple_Factories> Yes </Build_Time_Reduced_By_Multiple_Factories>
+		<Build_Tab_Land_Units>Yes</Build_Tab_Land_Units>
+		<Build_Initially_Locked>No</Build_Initially_Locked>
+		<Build_Can_Be_Unlocked_By_Slicer>No</Build_Can_Be_Unlocked_By_Slicer>
+		<Tactical_Build_Cost_Multiplayer>300</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>4</Tactical_Build_Time_Seconds>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<Piracy_Value_Credits>50</Piracy_Value_Credits>
+		<Score_Cost_Credits>45</Score_Cost_Credits>
+		<Population_Value>1</Population_Value>
+
+		<Required_Star_Base_Level>0</Required_Star_Base_Level>
+		<Maintenance_Cost>0.0</Maintenance_Cost>
+
+		<Tech_Level>0</Tech_Level>
+		<Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+
+		<Affiliation>Yevetha, Imperial_Proteus</Affiliation>
+
+		<Behavior>DUMMY_GROUND_COMPANY</Behavior>
+
+		<Max_Squad_Size> 1 </Max_Squad_Size>
+		<Company_Units> Yevethan_Purge_Soldier_Company_Dummy </Company_Units>
+		<Company_Transport_Unit>Imperial_Landing_Craft_Troops</Company_Transport_Unit>
+
+		<SFXEvent_Build_Started>RHD_Build_Troops</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Recruitment_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_Guard_Noghri</SFXEvent_Build_Complete>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Noghri</SFXEvent_Fleet_Move>
+	</GroundCompany>
+
+	<GroundCompany Name="Yevethan_Enforcement_Soldier_Company">
+
+		<Text_ID>TEXT_UNIT_YEVETHAN_ENFORCEMENT_SOLDIER_PLATOON</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_INFANTRY</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_YEVETHAN_ENFORCEMENT_SOLDIER
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_YEVETHAN_ENFORCEMENT_SOLDIER_COMPANY
+		TEXT_TOOLTIP_YEVETHAN_ENFORCEMENT_SOLDIER_SQUAD
+		TEXT_TOOLTIP_YEVETHAN_ENFORCEMENT_SOLDIER_HEALTH
+		TEXT_TOOLTIP_YEVETHAN_SOLDIER_MOVE
+		TEXT_TOOLTIP_YEVETHAN_ENFORCEMENT_SOLDIER_COMPANY_WEAP1
+		TEXT_TOOLTIP_YEVETHAN_ENFORCEMENT_SOLDIER_COMPANY_WEAP2
+		TEXT_TOOLTIP_YEVETHAN_ENFORCEMENT_SOLDIER_COMPANY_WEAP3
+		TEXT_TOOLTIP_YEVETHAN_ENFORCEMENT_SOLDIER_COMPANY_WEAP4
+		TEXT_TOOLTIP_YEVETHAN_ENFORCEMENT_SOLDIER_COMPANY_WEAP5
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_CAPABILITY_INFANTRY_CAPTURE
+		</Encyclopedia_Text>
+		<Icon_Name>I_BUTTON_YEVETHAN_ENFORCEMENT_SOLDIER.tga</Icon_Name>
+
+		<Damage>15</Damage>
+
+		<Ship_Class>infantry</Ship_Class>
+		<Formation_Priority>1</Formation_Priority>
+		<Is_Dummy>Yes</Is_Dummy>
+		<Is_Escort>yes</Is_Escort>
+
+		<GUI_Row> 1 </GUI_Row>
+		<Build_Cost_Credits>375</Build_Cost_Credits>
+		<Build_Time_Seconds>10</Build_Time_Seconds>
+		
+		<Required_Special_Structures> Y_Ground_Barracks | Cloning_HQ</Required_Special_Structures>
+		<Build_Time_Reduced_By_Multiple_Factories> Yes </Build_Time_Reduced_By_Multiple_Factories>
+		<Build_Tab_Land_Units>Yes</Build_Tab_Land_Units>
+		<Build_Initially_Locked>No</Build_Initially_Locked>
+		<Build_Can_Be_Unlocked_By_Slicer>No</Build_Can_Be_Unlocked_By_Slicer>
+		<Tactical_Build_Cost_Multiplayer>300</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>4</Tactical_Build_Time_Seconds>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<Piracy_Value_Credits>50</Piracy_Value_Credits>
+		<Score_Cost_Credits>45</Score_Cost_Credits>
+		<Population_Value>1</Population_Value>
+
+		<Required_Star_Base_Level>0</Required_Star_Base_Level>
+		<Maintenance_Cost>0.0</Maintenance_Cost>
+
+		<Tech_Level>0</Tech_Level>
+		<Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+
+		<Affiliation>Yevetha, Imperial_Proteus</Affiliation>
+
+		<Behavior>DUMMY_GROUND_COMPANY</Behavior>
+
+		<Max_Squad_Size> 1 </Max_Squad_Size>
+		<Company_Units> Yevethan_Enforcement_Soldier_Company_Dummy </Company_Units>
+		<Company_Transport_Unit>Imperial_Landing_Craft_Troops</Company_Transport_Unit>
+
+		<SFXEvent_Build_Started>RHD_Build_Troops</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Recruitment_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_Guard_Noghri</SFXEvent_Build_Complete>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Noghri</SFXEvent_Fleet_Move>
+	</GroundCompany>
+
+	<!-- Spawned Companies -->
+
+	<GroundCompany Name="Yevethan_Soldier_Main_Squad">
+		<Text_ID>TEXT_UNIT_YEVETHAN_SOLDIER_SQUAD</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_INFANTRY</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text> 
+		TEXT_TOOLTIP_YEVETHAN_SOLDIER
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_YEVETHAN_SOLDIER_SQUAD
+		TEXT_TOOLTIP_YEVETHAN_SOLDIER_HEALTH
+		TEXT_TOOLTIP_YEVETHAN_SOLDIER_MOVE
+		TEXT_TOOLTIP_YEVETHAN_SOLDIER_SQUAD_WEAP1
+		TEXT_TOOLTIP_YEVETHAN_SOLDIER_SQUAD_WEAP2
+		TEXT_TOOLTIP_YEVETHAN_SOLDIER_SQUAD_WEAP3
+		TEXT_TOOLTIP_YEVETHAN_SOLDIER_SQUAD_WEAP4
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_CAPABILITY_INFANTRY_CAPTURE
+		</Encyclopedia_Text>
+		<Icon_Name>I_BUTTON_YEVETHAN_SOLDIER.tga</Icon_Name>
+
+		<Tech_Level>99</Tech_Level>
+		<Build_Tab_Land_Units>No</Build_Tab_Land_Units>
+
+		<Create_Team_Type> Yevethan_Soldier_Container </Create_Team_Type>
+		<Max_Squad_Size> 10 </Max_Squad_Size>
+		<Company_Units> Yevethan_Soldier, Yevethan_Soldier, Yevethan_Soldier_Grenadier, Yevethan_Soldier, Yevethan_Soldier_HAT, Yevethan_Soldier_Grenadier, Yevethan_Soldier, Yevethan_Soldier, Yevethan_Soldier_Lieutenant, Yevethan_Soldier_Sergeant </Company_Units>
+	</GroundCompany>
+	
+	<GroundCompany Name="Yevethan_Soldier_Squad">
+		<Variant_Of_Existing_Type>Yevethan_Soldier_Main_Squad</Variant_Of_Existing_Type>
+		
+		<Company_Units> Yevethan_Soldier, Yevethan_Soldier, Yevethan_Soldier_Grenadier, Yevethan_Soldier, Yevethan_Soldier_HAT, Yevethan_Soldier_Grenadier, Yevethan_Soldier, Yevethan_Soldier, Yevethan_Soldier, Yevethan_Soldier_Sergeant </Company_Units>
+	</GroundCompany>
+
+	<!-- Purge -->
+
+	<GroundCompany Name="Yevethan_Purge_Soldier_Main_Squad">
+		<Text_ID>TEXT_UNIT_YEVETHAN_PURGE_SOLDIER_SQUAD</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_INFANTRY</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text> 
+		TEXT_TOOLTIP_YEVETHAN_PURGE_SOLDIER_SOLDIER
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_YEVETHAN_PURGE_SOLDIER_SQUAD
+		TEXT_TOOLTIP_YEVETHAN_PURGE_SOLDIER_HEALTH
+		TEXT_TOOLTIP_YEVETHAN_SOLDIER_MOVE
+		TEXT_TOOLTIP_YEVETHAN_PURGE_SOLDIER_SQUAD_WEAP1
+		TEXT_TOOLTIP_YEVETHAN_PURGE_SOLDIER_SQUAD_WEAP2
+		TEXT_TOOLTIP_YEVETHAN_PURGE_SOLDIER_SQUAD_WEAP2A
+		TEXT_TOOLTIP_YEVETHAN_PURGE_SOLDIER_SQUAD_WEAP3
+		TEXT_TOOLTIP_YEVETHAN_PURGE_SOLDIER_SQUAD_WEAP4
+		TEXT_TOOLTIP_YEVETHAN_PURGE_SOLDIER_SQUAD_WEAP5
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_CAPABILITY_INFANTRY_CAPTURE
+		</Encyclopedia_Text>
+		<Icon_Name>I_BUTTON_YEVETHAN_PURGE_SOLDIER.tga</Icon_Name>
+
+		<Tech_Level>99</Tech_Level>
+		<Build_Tab_Land_Units>No</Build_Tab_Land_Units>
+
+		<Create_Team_Type> Yevethan_Purge_Soldier_Container </Create_Team_Type>
+		<Max_Squad_Size> 10 </Max_Squad_Size>
+		<Company_Units> Yevethan_Purge_Soldier, Yevethan_Purge_Soldier, Yevethan_Purge_Soldier_Disruptor, Yevethan_Purge_Soldier, Yevethan_Purge_Soldier_Flamer, Yevethan_Purge_Soldier, Yevethan_Purge_Soldier, Yevethan_Purge_Soldier_Flechette, Yevethan_Purge_Soldier_Lieutenant, Yevethan_Purge_Soldier_Sergeant </Company_Units>
+	</GroundCompany>
+	
+	<GroundCompany Name="Yevethan_Purge_Soldier_Squad">
+		<Variant_Of_Existing_Type>Yevethan_Purge_Soldier_Main_Squad</Variant_Of_Existing_Type>
+		
+		<Company_Units> Yevethan_Purge_Soldier, Yevethan_Purge_Soldier, Yevethan_Purge_Soldier_Disruptor, Yevethan_Purge_Soldier, Yevethan_Purge_Soldier_Flamer, Yevethan_Purge_Soldier, Yevethan_Purge_Soldier, Yevethan_Purge_Soldier_Flechette, Yevethan_Purge_Soldier, Yevethan_Purge_Soldier </Company_Units>
+	</GroundCompany>
+
+	<!-- Enforcement -->
+
+	<GroundCompany Name="Yevethan_Enforcement_Soldier_Main_Squad">
+		<Text_ID>TEXT_UNIT_YEVETHAN_ENFORCEMENT_SOLDIER_SQUAD</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_INFANTRY</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text> 
+		TEXT_TOOLTIP_YEVETHAN_ENFORCEMENT_SOLDIER
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_YEVETHAN_SOLDIER_SQUAD
+		TEXT_TOOLTIP_YEVETHAN_SOLDIER_HEALTH
+		TEXT_TOOLTIP_YEVETHAN_SOLDIER_MOVE
+		TEXT_TOOLTIP_YEVETHAN_SOLDIER_SQUAD_WEAP1
+		TEXT_TOOLTIP_YEVETHAN_SOLDIER_SQUAD_WEAP2
+		TEXT_TOOLTIP_YEVETHAN_SOLDIER_SQUAD_WEAP3
+		TEXT_TOOLTIP_YEVETHAN_SOLDIER_SQUAD_WEAP4
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_CAPABILITY_INFANTRY_CAPTURE
+		</Encyclopedia_Text>
+		<Icon_Name>I_BUTTON_YEVETHAN_ENFORCEMENT_SOLDIER.tga</Icon_Name>
+
+		<Tech_Level>99</Tech_Level>
+		<Build_Tab_Land_Units>No</Build_Tab_Land_Units>
+
+		<Create_Team_Type> Yevethan_Enforcement_Soldier_Container </Create_Team_Type>
+		<Max_Squad_Size> 10 </Max_Squad_Size>
+		<Company_Units> Yevethan_Enforcement_Soldier, Yevethan_Enforcement_Soldier_HAT, Yevethan_Enforcement_Soldier_Grenadier, Yevethan_Enforcement_Soldier_Gunner, Yevethan_Enforcement_Soldier_HAT, Yevethan_Enforcement_Soldier_Grenadier, Yevethan_Enforcement_Soldier_HAT, Yevethan_Enforcement_Soldier, Yevethan_Enforcement_Soldier_Lieutenant, Yevethan_Enforcement_Soldier_Sergeant </Company_Units>
+	</GroundCompany>
+	
+	<GroundCompany Name="Yevethan_Enforcement_Soldier_Squad">
+		<Variant_Of_Existing_Type>Yevethan_Enforcement_Soldier_Main_Squad</Variant_Of_Existing_Type>
+		
+		<Company_Units> Yevethan_Enforcement_Soldier, Yevethan_Enforcement_Soldier_HAT, Yevethan_Enforcement_Soldier_Grenadier, Yevethan_Enforcement_Soldier_Gunner, Yevethan_Enforcement_Soldier, Yevethan_Enforcement_Soldier_HAT, Yevethan_Enforcement_Soldier_Grenadier, Yevethan_Enforcement_Soldier_HAT, Yevethan_Enforcement_Soldier, Yevethan_Enforcement_Soldier </Company_Units>
+	</GroundCompany>
+
+	<!-- Containers -->
+
+	<Container Name="Yevethan_Soldier_Container">
+
+		<Text_ID>TEXT_UNIT_YEVETHAN_SOLDIER_SQUAD</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_INFANTRY</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_YEVETHAN_SOLDIER
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_YEVETHAN_SOLDIER_SQUAD
+		TEXT_TOOLTIP_YEVETHAN_SOLDIER_HEALTH
+		TEXT_TOOLTIP_YEVETHAN_SOLDIER_MOVE
+		TEXT_TOOLTIP_YEVETHAN_SOLDIER_SQUAD_WEAP1
+		TEXT_TOOLTIP_YEVETHAN_SOLDIER_SQUAD_WEAP2
+		TEXT_TOOLTIP_YEVETHAN_SOLDIER_SQUAD_WEAP3
+		TEXT_TOOLTIP_YEVETHAN_SOLDIER_SQUAD_WEAP4	
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_CAPABILITY_INFANTRY_CAPTURE
+		</Encyclopedia_Text>
+		<Icon_Name>I_BUTTON_YEVETHAN_SOLDIER.tga</Icon_Name>
+
+		<Select_Box_Scale>65</Select_Box_Scale>
+		<Select_Box_Z_Adjust>0</Select_Box_Z_Adjust>
+
+		<Land_Model_Name/>
+
+		<Max_Speed> 1.0 </Max_Speed>
+		<OverrideAcceleration>0.1</OverrideAcceleration>
+		<OverrideDeceleration>0.1</OverrideDeceleration>
+		<Max_Rate_Of_Turn>12.0</Max_Rate_Of_Turn>
+
+		<CategoryMask>Infantry | AntiInfantry</CategoryMask>
+		<Show_Name>No</Show_Name>
+
+		<Tactical_Bribe_Cost>25</Tactical_Bribe_Cost>
+
+		<Behavior>TEAM,SELECTABLE,UNIT_AI</Behavior>
+		<LandBehavior>REVEAL, LAND_TEAM_CONTAINER_LOCOMOTOR, TEAM_TARGETING, GARRISON_UNIT</LandBehavior>
+
+		<Lua_Script/>
+
+		<SFXEvent_Select>Null</SFXEvent_Select>
+
+		<Garrison_Category> Infantry </Garrison_Category>
+		<Garrison_Value>2</Garrison_Value>
+
+		<Is_Squashable> true </Is_Squashable>
+
+		<MovementClass>Infantry</MovementClass>
+		<Space_Layer> Land </Space_Layer>
+		<UnitCollisionClass> Infantry </UnitCollisionClass>
+		<OccupationStyle>1x1</OccupationStyle>
+		<ContainerArrangement> Dartboard </ContainerArrangement>
+		<FormationSpacing> 1 </FormationSpacing>
+		<FormationOrder> 2 </FormationOrder>
+		<MovementPredictionInterval> 4.0 </MovementPredictionInterval>
+
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+
+		<Land_FOW_Reveal_Range>250.0</Land_FOW_Reveal_Range>
+
+		<Targeting_Max_Attack_Distance>275.0</Targeting_Max_Attack_Distance>
+		<Targeting_Min_Attack_Distance>0.0</Targeting_Min_Attack_Distance>
+		<Idle_Chase_Range>50.0</Idle_Chase_Range>
+		<Guard_Chase_Range>275.0</Guard_Chase_Range>
+		<Attack_Move_Response_Range>275.0</Attack_Move_Response_Range>
+		<Autonomous_Move_Extension_Vs_Attacker>50.0</Autonomous_Move_Extension_Vs_Attacker>
+
+		<SpaceBehavior>REVEAL</SpaceBehavior>
+		<Space_FOW_Reveal_Range>800.0</Space_FOW_Reveal_Range>
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>SPREAD_OUT</Type>
+				<Mod_Multiplier>SPEED_MULTIPLIER,	 0.5f</Mod_Multiplier>
+				<Mod_Multiplier>TAKE_DAMAGE_MULTIPLIER, 0.75f</Mod_Multiplier>
+				<SFXEvent_GUI_Unit_Ability_Activated>Unit_Take_Cover_Storm_Trooper</SFXEvent_GUI_Unit_Ability_Activated>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+	</Container>
+
+	<Container Name="Yevethan_Purge_Soldier_Container">
+
+		<Text_ID>TEXT_UNIT_YEVETHAN_SOLDIER_SQUAD</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_INFANTRY</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_YEVETHAN_PURGE_SOLDIER
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_YEVETHAN_PURGE_SOLDIER_SQUAD
+		TEXT_TOOLTIP_YEVETHAN_PURGE_SOLDIER_HEALTH
+		TEXT_TOOLTIP_YEVETHAN_SOLDIER_MOVE
+		TEXT_TOOLTIP_YEVETHAN_PURGE_SOLDIER_SQUAD_WEAP1
+		TEXT_TOOLTIP_YEVETHAN_PURGE_SOLDIER_SQUAD_WEAP2
+		TEXT_TOOLTIP_YEVETHAN_PURGE_SOLDIER_SQUAD_WEAP3
+		TEXT_TOOLTIP_YEVETHAN_PURGE_SOLDIER_SQUAD_WEAP4	
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_CAPABILITY_INFANTRY_CAPTURE
+		</Encyclopedia_Text>
+		<Icon_Name>I_BUTTON_YEVETHAN_PURGE_SOLDIER.tga</Icon_Name>
+
+		<Select_Box_Scale>65</Select_Box_Scale>
+		<Select_Box_Z_Adjust>0</Select_Box_Z_Adjust>
+
+		<Land_Model_Name/>
+
+		<Max_Speed> 1.0 </Max_Speed>
+		<OverrideAcceleration>0.1</OverrideAcceleration>
+		<OverrideDeceleration>0.1</OverrideDeceleration>
+		<Max_Rate_Of_Turn>12.0</Max_Rate_Of_Turn>
+
+		<CategoryMask>Infantry | AntiInfantry</CategoryMask>
+		<Show_Name>No</Show_Name>
+
+		<Tactical_Bribe_Cost>25</Tactical_Bribe_Cost>
+
+		<Behavior>TEAM,SELECTABLE,UNIT_AI</Behavior>
+		<LandBehavior>REVEAL, LAND_TEAM_CONTAINER_LOCOMOTOR, TEAM_TARGETING, GARRISON_UNIT</LandBehavior>
+
+		<Lua_Script/>
+
+		<SFXEvent_Select>Null</SFXEvent_Select>
+
+		<Garrison_Category> Infantry </Garrison_Category>
+		<Garrison_Value>2</Garrison_Value>
+
+		<Is_Squashable> true </Is_Squashable>
+
+		<MovementClass>Infantry</MovementClass>
+		<Space_Layer> Land </Space_Layer>
+		<UnitCollisionClass> Infantry </UnitCollisionClass>
+		<OccupationStyle>1x1</OccupationStyle>
+		<ContainerArrangement> Dartboard </ContainerArrangement>
+		<FormationSpacing> 1 </FormationSpacing>
+		<FormationOrder> 2 </FormationOrder>
+		<MovementPredictionInterval> 4.0 </MovementPredictionInterval>
+
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+
+		<Land_FOW_Reveal_Range>250.0</Land_FOW_Reveal_Range>
+
+		<Targeting_Max_Attack_Distance>275.0</Targeting_Max_Attack_Distance>
+		<Targeting_Min_Attack_Distance>0.0</Targeting_Min_Attack_Distance>
+		<Idle_Chase_Range>50.0</Idle_Chase_Range>
+		<Guard_Chase_Range>275.0</Guard_Chase_Range>
+		<Attack_Move_Response_Range>275.0</Attack_Move_Response_Range>
+		<Autonomous_Move_Extension_Vs_Attacker>50.0</Autonomous_Move_Extension_Vs_Attacker>
+
+		<SpaceBehavior>REVEAL</SpaceBehavior>
+		<Space_FOW_Reveal_Range>800.0</Space_FOW_Reveal_Range>
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>SPREAD_OUT</Type>
+				<Mod_Multiplier>SPEED_MULTIPLIER,	 0.5f</Mod_Multiplier>
+				<Mod_Multiplier>TAKE_DAMAGE_MULTIPLIER, 0.75f</Mod_Multiplier>
+				<SFXEvent_GUI_Unit_Ability_Activated>Unit_Take_Cover_Storm_Trooper</SFXEvent_GUI_Unit_Ability_Activated>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+	</Container>
+
+	<Container Name="Yevethan_Enforcement_Soldier_Container">
+
+		<Text_ID>TEXT_UNIT_YEVETHAN_SOLDIER_SQUAD</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_INFANTRY</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_YEVETHAN_ENFORCEMENT_SOLDIER
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_YEVETHAN_ENFORCEMENT_SOLDIER_SQUAD
+		TEXT_TOOLTIP_YEVETHAN_ENFORCEMENT_SOLDIER_HEALTH
+		TEXT_TOOLTIP_YEVETHAN_SOLDIER_MOVE
+		TEXT_TOOLTIP_YEVETHAN_ENFORCEMENT_SOLDIER_SQUAD_WEAP1
+		TEXT_TOOLTIP_YEVETHAN_ENFORCEMENT_SOLDIER_SQUAD_WEAP2
+		TEXT_TOOLTIP_YEVETHAN_ENFORCEMENT_SOLDIER_SQUAD_WEAP3
+		TEXT_TOOLTIP_YEVETHAN_ENFORCEMENT_SOLDIER_SQUAD_WEAP4	
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_CAPABILITY_INFANTRY_CAPTURE
+		</Encyclopedia_Text>
+		<Icon_Name>I_BUTTON_YEVETHAN_ENFORCEMENT_SOLDIER.tga</Icon_Name>
+
+		<Select_Box_Scale>65</Select_Box_Scale>
+		<Select_Box_Z_Adjust>0</Select_Box_Z_Adjust>
+
+		<Land_Model_Name/>
+
+		<Max_Speed> 1.0 </Max_Speed>
+		<OverrideAcceleration>0.1</OverrideAcceleration>
+		<OverrideDeceleration>0.1</OverrideDeceleration>
+		<Max_Rate_Of_Turn>12.0</Max_Rate_Of_Turn>
+
+		<CategoryMask>Infantry | AntiInfantry</CategoryMask>
+		<Show_Name>No</Show_Name>
+
+		<Tactical_Bribe_Cost>25</Tactical_Bribe_Cost>
+
+		<Behavior>TEAM,SELECTABLE,UNIT_AI</Behavior>
+		<LandBehavior>REVEAL, LAND_TEAM_CONTAINER_LOCOMOTOR, TEAM_TARGETING, GARRISON_UNIT</LandBehavior>
+
+		<Lua_Script/>
+
+		<SFXEvent_Select>Null</SFXEvent_Select>
+
+		<Garrison_Category> Infantry </Garrison_Category>
+		<Garrison_Value>2</Garrison_Value>
+
+		<Is_Squashable> true </Is_Squashable>
+
+		<MovementClass>Infantry</MovementClass>
+		<Space_Layer> Land </Space_Layer>
+		<UnitCollisionClass> Infantry </UnitCollisionClass>
+		<OccupationStyle>1x1</OccupationStyle>
+		<ContainerArrangement> Dartboard </ContainerArrangement>
+		<FormationSpacing> 1 </FormationSpacing>
+		<FormationOrder> 2 </FormationOrder>
+		<MovementPredictionInterval> 4.0 </MovementPredictionInterval>
+
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+
+		<Land_FOW_Reveal_Range>250.0</Land_FOW_Reveal_Range>
+
+		<Targeting_Max_Attack_Distance>275.0</Targeting_Max_Attack_Distance>
+		<Targeting_Min_Attack_Distance>0.0</Targeting_Min_Attack_Distance>
+		<Idle_Chase_Range>50.0</Idle_Chase_Range>
+		<Guard_Chase_Range>275.0</Guard_Chase_Range>
+		<Attack_Move_Response_Range>275.0</Attack_Move_Response_Range>
+		<Autonomous_Move_Extension_Vs_Attacker>50.0</Autonomous_Move_Extension_Vs_Attacker>
+
+		<SpaceBehavior>REVEAL</SpaceBehavior>
+		<Space_FOW_Reveal_Range>800.0</Space_FOW_Reveal_Range>
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>SPREAD_OUT</Type>
+				<Mod_Multiplier>SPEED_MULTIPLIER,	 0.5f</Mod_Multiplier>
+				<Mod_Multiplier>TAKE_DAMAGE_MULTIPLIER, 0.75f</Mod_Multiplier>
+				<SFXEvent_GUI_Unit_Ability_Activated>Unit_Take_Cover_Storm_Trooper</SFXEvent_GUI_Unit_Ability_Activated>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+	</Container>
+
+	<!-- Garrison Spawner -->
+
+	<GroundInfantry Name="Military_FB_Dummy_Spawner_1">
+		<Variant_Of_Existing_Type> Infantry_Dummy_Template </Variant_Of_Existing_Type>
+		<Land_Model_Name>W_LASER_INVISIBLE.ALO</Land_Model_Name>
+		<AI_Combat_Power>1</AI_Combat_Power>
+	</GroundInfantry>
+
+	<GroundInfantry Name="Military_FB_Dummy_Spawner_2">
+		<Variant_Of_Existing_Type> Military_FB_Dummy_Spawner_1 </Variant_Of_Existing_Type>
+	</GroundInfantry>
+
+	<GroundInfantry Name="Support_FB_Dummy_Spawner_1">
+		<Variant_Of_Existing_Type> Military_FB_Dummy_Spawner_1 </Variant_Of_Existing_Type>
+	</GroundInfantry>
+
+	<GroundInfantry Name="Support_FB_Dummy_Spawner_2">
+		<Variant_Of_Existing_Type> Military_FB_Dummy_Spawner_1 </Variant_Of_Existing_Type>
+	</GroundInfantry>
+
+	<GroundInfantry Name="Commando_FB_Dummy_Spawner_1">
+		<Variant_Of_Existing_Type> Military_FB_Dummy_Spawner_1 </Variant_Of_Existing_Type>
+	</GroundInfantry>
+
+	<!-- Bunker Infantry -->
+
+	<GroundInfantry Name="Yevethan_Trooper">
+		<Variant_Of_Existing_Type>Yevethan_Soldier</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_UNIT_YEVETHANTROOPER</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_INFANTRY</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_YEVETHANTROOPER
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_YEVETHANTROOPER_HEALTH
+		TEXT_TOOLTIP_YEVETHANTROOPER_MOVE
+		TEXT_TOOLTIP_YEVETHANTROOPER_WEAP1
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_CAPABILITY_INFANTRY_CAPTURE
+		</Encyclopedia_Text>
+		<Icon_Name>I_BUTTON_YEVETHAN_TROOPER.TGA</Icon_Name>
+		
+		<Tactical_Health>15</Tactical_Health>
+		<HardPoints>HP_E11_Carbine_Unskilled</HardPoints>
+		
+	</GroundInfantry>
+
+	<GroundInfantry Name="Yevethan_Trooper_Grenadier">
+		<Variant_Of_Existing_Type>Yevethan_Trooper</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_UNIT_YEVETHANTROOPER</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_INFANTRY</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_YEVETHANTROOPER
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_YEVETHANTROOPER_HEALTH
+		TEXT_TOOLTIP_YEVETHANTROOPER_MOVE
+		TEXT_TOOLTIP_YEVETHANTROOPER_WEAP1
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_CAPABILITY_INFANTRY_CAPTURE
+		</Encyclopedia_Text>
+
+		<!-- Grenade throw -->
+		<Projectile_Types>Proj_Light_Concussion_Grenade_Infantry</Projectile_Types>
+		<Projectile_Fire_Recharge_Seconds>15.0</Projectile_Fire_Recharge_Seconds>
+		<Projectile_Fire_Pulse_Count>1</Projectile_Fire_Pulse_Count>
+		<Projectile_Fire_Pulse_Delay_Seconds>0.2</Projectile_Fire_Pulse_Delay_Seconds>
+		<Projectile_Appearance_Delay_Frames> 8 </Projectile_Appearance_Delay_Frames>
+		<SFXEvent_Fire>Unit_Grenade_Throw</SFXEvent_Fire>
+
+		<Highlight_Blob_Material_Name>Highlight_Infantry_Grenadier</Highlight_Blob_Material_Name>
+	</GroundInfantry>
+
+	<GroundInfantry Name="Yevethan_Trooper_Flechette">
+		<Variant_Of_Existing_Type>Yevethan_Trooper</Variant_Of_Existing_Type>
+		<Text_ID>TEXT_UNIT_YEVETHANTROOPER_AT_LIGHT</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_YEVETHANTROOPER
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_YEVETHANTROOPER_HEALTH
+		TEXT_TOOLTIP_YEVETHANTROOPER_MOVE
+		TEXT_TOOLTIP_YEVETHANTROOPER_WEAP3
+		TEXT_TOOLTIP_YEVETHANTROOPER_WEAP3A
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_CAPABILITY_INFANTRY_CAPTURE
+		</Encyclopedia_Text>
+
+		<HardPoints>HP_FC1, HP_FC1_Extra</HardPoints>
+		<Targeting_Max_Attack_Distance>400.0</Targeting_Max_Attack_Distance>
+
+        <Highlight_Blob_Material_Name>Highlight_Infantry_Rocket</Highlight_Blob_Material_Name>
+	</GroundInfantry>
+
+	<GroundInfantry Name="Yevethan_Trooper_Sergeant">
+		<Variant_Of_Existing_Type>Yevethan_Trooper</Variant_Of_Existing_Type>
+		<Text_ID>TEXT_UNIT_YEVETHANTROOPER_SERGEANT</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_YEVETHANTROOPER
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_YEVETHANTROOPER_SGT_HEALTH
+		TEXT_TOOLTIP_YEVETHANTROOPER_MOVE
+		TEXT_TOOLTIP_YEVETHANTROOPER_WEAP1
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_CAPABILITY_INFANTRY_CAPTURE
+		</Encyclopedia_Text>
+
+		<Tactical_Health> 20 </Tactical_Health>
+
+       	<Highlight_Blob_Material_Name>Highlight_Infantry_SGT</Highlight_Blob_Material_Name>
+	</GroundInfantry>
+
+	<GroundInfantry Name="Yevethan_Trooper_Gunner_light">
+		<Variant_Of_Existing_Type>Yevethan_Trooper</Variant_Of_Existing_Type>
+		<Text_ID>TEXT_UNIT_YEVETHANTROOPER_GUNNER_LIGHT</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_YEVETHANTROOPER
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_YEVETHANTROOPER_HEALTH
+		TEXT_TOOLTIP_YEVETHANTROOPER_MOVE
+		TEXT_TOOLTIP_YEVETHANTROOPER_WEAP2
+		TEXT_TOOLTIP_YEVETHANTROOPER_WEAP2A
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_CAPABILITY_INFANTRY_CAPTURE
+		</Encyclopedia_Text>
+
+		<HardPoints> HP_Imperial_Heavy_Repeater_LMG, HP_ImpHeavyRep_Concussion </HardPoints>
+
+        <Highlight_Blob_Material_Name>Highlight_Infantry_Gunner</Highlight_Blob_Material_Name>
+	</GroundInfantry>
+
+	<GroundInfantry Name="Yevethan_Trooper_Medic">
+		<Variant_Of_Existing_Type>Yevethan_Trooper</Variant_Of_Existing_Type>
+		<Text_ID>TEXT_UNIT_YEVETHANTROOPER_MEDIC</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_SUPPORT</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_YEVETHANTROOPER
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_YEVETHANTROOPER_HEALTH
+		TEXT_TOOLTIP_YEVETHANTROOPER_MOVE
+		TEXT_TOOLTIP_YEVETHANTROOPER_WEAP1
+		TEXT_TOOLTIP_SEPARATOR_BONUS_BLOCK
+		TEXT_TOOLTIP_BONUS_MEDIC_HEAL_REPAIR
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_CAPABILITY_INFANTRY_CAPTURE
+		</Encyclopedia_Text>
+
+        	<Highlight_Blob_Material_Name>Highlight_Infantry_Medic</Highlight_Blob_Material_Name>
+
+		<Property_Flags>HealsInfantry | HealsVehicles</Property_Flags>
+
+		<Abilities SubObjectList="Yes">
+			<Force_Healing_Ability Name="Medic_Healing">
+				<Activation_Style>Ground_Automatic</Activation_Style>
+				<Heal_Range>100.0</Heal_Range>
+				<Heal_Amount>5.0</Heal_Amount>
+				<Heal_Interval_In_Secs>1.0</Heal_Interval_In_Secs>
+				<Single_Target_Heal>Yes</Single_Target_Heal>
+				<Heal_Range_Blob_Material>Heal_Support_Radius_Overlay</Heal_Range_Blob_Material>
+				<!-- We can heal the following unit types: -->
+				<Applicable_Unit_Categories>Infantry, InfantryHero, Vehicle, VehicleHero, AirGunship, AirSpeeder</Applicable_Unit_Categories>
+				<SFXEvent_Target_Affected>Unit_Force_Healing_Pulse</SFXEvent_Target_Affected>
+				<Target_Particle_Effect>Shield_Sparks_Medium</Target_Particle_Effect>
+				<Target_Particle_Bone_Name>ROOT</Target_Particle_Bone_Name>
+				<Target_Light_Effect_Type>Color_Flash</Target_Light_Effect_Type>
+				<Target_Light_Effect_Color>1.2, 1.2, 2.0</Target_Light_Effect_Color>
+				<Target_Light_Effect_Color2/>
+				<Target_Light_Effect_Duration>0.6</Target_Light_Effect_Duration>
+				<Target_Light_Effect_Pulse_Count>1</Target_Light_Effect_Pulse_Count>
+				<Owner_Particle_Bone_Name>ROOT</Owner_Particle_Bone_Name>
+				<Owner_Light_Effect_Type>Color_Flash</Owner_Light_Effect_Type>
+				<Owner_Light_Effect_Color>1.2, 1.2, 2.0</Owner_Light_Effect_Color>
+				<Owner_Light_Effect_Color2/>
+				<Owner_Light_Effect_Duration>0.6</Owner_Light_Effect_Duration>
+				<Owner_Light_Effect_Pulse_Count>1</Owner_Light_Effect_Pulse_Count>
+				<!--<Lightning_Effect_Name>Repair_Facility_Effect</Lightning_Effect_Name>-->
+			</Force_Healing_Ability>
+		</Abilities>
+	</GroundInfantry>
+
+	<GroundInfantry Name="Yevethan_Commando">
+		<Variant_Of_Existing_Type>Yevethan_Trooper</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_UNIT_YEVETHAN_COMMANDO</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_COMMANDO</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_YEVETHAN_COMMANDO
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_YEVETHAN_COMMANDO_HEALTH
+		TEXT_TOOLTIP_YEVETHAN_COMMANDO_MOVE
+		TEXT_TOOLTIP_YEVETHAN_COMMANDO_WEAP1
+		TEXT_TOOLTIP_YEVETHAN_COMMANDO_WEAP1A
+		TEXT_TOOLTIP_YEVETHAN_COMMANDO_WEAP4
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_CAPABILITY_INFANTRY_CAPTURE
+		</Encyclopedia_Text>
+		<Icon_Name>i_button_yevethan_commando.tga</Icon_Name>
+
+		<Tactical_Health> 25 </Tactical_Health>
+
+		<Land_Model_Name>Yevethan_purge_trooper.ALO</Land_Model_Name>
+
+		<GalacticBehavior> SELECTABLE </GalacticBehavior>
+		<LandBehavior>SELECTABLE, LANDING, ABILITY_COUNTDOWN, SURFACE_FX,LAND_TEAM_INFANTRY_LOCOMOTOR,IDLE,WEAPON,STUNNABLE, REVEAL,HIDE_WHEN_FOGGED,DAMAGE_TRACKING,DEMOLITION</LandBehavior>
+
+		<HardPoints> HP_Imperial_Heavy_Repeater_LMG_Skilled, HP_ImpHeavyRep_Concussion_Skilled </HardPoints>
+
+		<!-- Grenade throw -->
+		<Projectile_Types>Proj_Light_Thermal_Grenade_Infantry</Projectile_Types>
+		<Projectile_Fire_Recharge_Seconds>15.0</Projectile_Fire_Recharge_Seconds>
+		<Projectile_Fire_Pulse_Count>1</Projectile_Fire_Pulse_Count>
+		<Projectile_Fire_Pulse_Delay_Seconds>0.2</Projectile_Fire_Pulse_Delay_Seconds>
+		<Projectile_Appearance_Delay_Frames> 8 </Projectile_Appearance_Delay_Frames>
+		<SFXEvent_Fire>Unit_Grenade_Throw</SFXEvent_Fire>
+
+		<!-- 3 ai mines per 4 squad company on yevethan commando -->
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>SPRINT</Type>
+				<Expiration_Seconds> 8.0 </Expiration_Seconds>
+				<Recharge_Seconds> 45.0 </Recharge_Seconds>
+				<Mod_Multiplier>SPEED_MULTIPLIER,	 2.0f</Mod_Multiplier>
+				<Mod_Multiplier>TAKE_DAMAGE_MULTIPLIER, 0.75f</Mod_Multiplier>
+			</Unit_Ability>
+			
+			<Unit_Ability>
+				<Type>PROXIMITY_MINES</Type>
+				<Recharge_Seconds>90.0</Recharge_Seconds>
+				<GUI_Activated_Ability_Name>Army_Commando_Proximity_Mines_AI</GUI_Activated_Ability_Name>
+				<Effective_Radius> 100.0 </Effective_Radius>
+				<SFXEvent_Target_Ability/>
+				<Area_Effect_Decal_Distance>50.0</Area_Effect_Decal_Distance>
+				<Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_PROXIMITY_MINES_AP_NAME</Alternate_Name_Text>
+				<Alternate_Description_Text>TEXT_TOOLTIP_ABILITY_PROXIMITY_MINES_AP_DESCRIPTION</Alternate_Description_Text>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+		
+		<Abilities SubObjectList="Yes">
+			<Proximity_Mines_Ability Name="Army_Commando_Proximity_Mines_AI">
+				<Activation_Style>User_Input</Activation_Style>
+				<Activation_Min_Range>0.0</Activation_Min_Range>
+				<Activation_Max_Range>25.0</Activation_Max_Range>
+				<Mine_Type>Mine_Land_Prox_Antipersonnel</Mine_Type>
+				<Trigger_Radius>10</Trigger_Radius>
+				<Number_Of_Mines>6</Number_Of_Mines>
+				<Activation_Time_In_Seconds>0.5</Activation_Time_In_Seconds>
+				<Activate_SFX>Unit_Mine_Arm</Activate_SFX>
+			</Proximity_Mines_Ability>
+		</Abilities>
+	</GroundInfantry>
+
+	<GroundInfantry Name="Yevethan_Commando_Proton">
+		<Variant_Of_Existing_Type>Yevethan_Commando</Variant_Of_Existing_Type>
+		<Text_ID>TEXT_UNIT_YEVETHAN_COMMANDO_PROTON</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_YEVETHAN_COMMANDO
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_YEVETHAN_COMMANDO_HEALTH
+		TEXT_TOOLTIP_YEVETHAN_COMMANDO_MOVE
+		TEXT_TOOLTIP_YEVETHAN_COMMANDO_WEAP2
+		TEXT_TOOLTIP_YEVETHAN_COMMANDO_WEAP5
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_CAPABILITY_INFANTRY_CAPTURE
+		</Encyclopedia_Text>
+
+		<HardPoints> HP_Imperial_Proton_Rifle_Skilled_Hand </HardPoints>
+		<CategoryMask> Infantry | AntiVehicle</CategoryMask>
+
+		<Tactical_Health> 25 </Tactical_Health>
+
+		<!-- Grenade throw -->
+		<Projectile_Types>Proj_Light_Concussion_Grenade_Infantry</Projectile_Types>
+
+        <Highlight_Blob_Material_Name>Highlight_Infantry_Rocket</Highlight_Blob_Material_Name>
+		
+		<Targeting_Priority_Set>AntiVehicle</Targeting_Priority_Set>
+	</GroundInfantry>
+
+	<GroundInfantry Name="Yevethan_Commando_Lieutenant">
+		<Variant_Of_Existing_Type>Yevethan_Commando</Variant_Of_Existing_Type>
+		<Text_ID>TEXT_UNIT_YEVETHAN_COMMANDO_LIEUTENANT</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_YEVETHAN_COMMANDO
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_YEVETHAN_COMMANDO_LIEUTENANT_HEALTH
+		TEXT_TOOLTIP_YEVETHAN_COMMANDO_MOVE
+		TEXT_TOOLTIP_YEVETHAN_COMMANDO_WEAP3
+		TEXT_TOOLTIP_YEVETHAN_COMMANDO_WEAP4
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_CAPABILITY_INFANTRY_CAPTURE
+		</Encyclopedia_Text>
+
+		<Tactical_Health> 30 </Tactical_Health>
+
+		<HardPoints> HP_Imperial_Sonic_Blaster_Skilled_Hand </HardPoints>
+
+        <Highlight_Blob_Material_Name>Highlight_Infantry_LT</Highlight_Blob_Material_Name>
+
+	</GroundInfantry>
+
+	<!-- Bunker Garrison -->
+
+	<GroundCompany Name="Yevethan_Trooper_Heavy_Squad">
+		<Variant_Of_Existing_Type>Yevethan_Soldier_Main_Squad</Variant_Of_Existing_Type>
+		<Text_ID>TEXT_UNIT_HEAVY_YEVETHANTROOPER_SQUAD</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_YEVETHANTROOPER
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_YEVETHANTROOPER_SQUAD
+		TEXT_TOOLTIP_YEVETHANTROOPER_HEALTH
+		TEXT_TOOLTIP_YEVETHANTROOPER_MOVE
+		TEXT_TOOLTIP_YEVETHANTROOPER_SQUAD1_WEAP1
+		TEXT_TOOLTIP_YEVETHANTROOPER_SQUAD1_WEAP2
+		TEXT_TOOLTIP_YEVETHANTROOPER_SQUAD1_WEAP2A
+		TEXT_TOOLTIP_YEVETHANTROOPER_SQUAD1_WEAP3
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_CAPABILITY_INFANTRY_CAPTURE
+		</Encyclopedia_Text>
+		<Icon_Name>i_button_yevethan_trooper_weap.tga</Icon_Name>
+		<Max_Squad_Size> 9 </Max_Squad_Size>
+
+		<Create_Team_Type> Yevethan_Trooper_Heavy_Container </Create_Team_Type>
+		<Company_Units> Yevethan_Trooper_Sergeant, Yevethan_Trooper_Flechette, Yevethan_Trooper_Grenadier, Yevethan_Trooper, Yevethan_Trooper, Yevethan_Trooper, Yevethan_Trooper, Yevethan_Trooper, Yevethan_Trooper_Grenadier </Company_Units>
+	</GroundCompany>
+
+	<GroundCompany Name="Yevethan_Trooper_Assault_Squad">
+		<Variant_Of_Existing_Type>Yevethan_Soldier_Main_Squad</Variant_Of_Existing_Type>
+		<Text_ID>TEXT_UNIT_ASSAULT_YEVETHANTROOPER_SQUAD</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_YEVETHANTROOPER
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_YEVETHANTROOPER_SQUAD
+		TEXT_TOOLTIP_YEVETHANTROOPER_HEALTH
+		TEXT_TOOLTIP_YEVETHANTROOPER_MOVE
+		TEXT_TOOLTIP_YEVETHANTROOPER_SQUAD2_WEAP1
+		TEXT_TOOLTIP_YEVETHANTROOPER_SQUAD2_WEAP2
+		TEXT_TOOLTIP_YEVETHANTROOPER_SQUAD2_WEAP2A
+		TEXT_TOOLTIP_YEVETHANTROOPER_SQUAD2_WEAP3
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_CAPABILITY_INFANTRY_CAPTURE
+		</Encyclopedia_Text>
+		<Icon_Name>i_button_yevethan_trooper_heavy.tga</Icon_Name>
+		<Max_Squad_Size> 9 </Max_Squad_Size>
+
+		<Create_Team_Type> Yevethan_Trooper_Assault_Container </Create_Team_Type>
+		<Company_Units> Yevethan_Trooper_Sergeant, Yevethan_Trooper_Gunner_light, Yevethan_Trooper_Grenadier, Yevethan_Trooper, Yevethan_Trooper, Yevethan_Trooper, Yevethan_Trooper, Yevethan_Trooper, Yevethan_Trooper_Grenadier </Company_Units>
+	</GroundCompany>
+
+	<GroundCompany Name="Yevethan_Trooper_Medium_Squad">
+		<Variant_Of_Existing_Type>Yevethan_Soldier_Main_Squad</Variant_Of_Existing_Type>
+		<Text_ID>TEXT_UNIT_YEVETHANTROOPER_SQUAD</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_YEVETHANTROOPER
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_YEVETHANTROOPER_SQUAD
+		TEXT_TOOLTIP_YEVETHANTROOPER_HEALTH
+		TEXT_TOOLTIP_YEVETHANTROOPER_MOVE
+		TEXT_TOOLTIP_YEVETHANTROOPER_SQUAD3_WEAP1
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_CAPABILITY_INFANTRY_CAPTURE
+		</Encyclopedia_Text>
+		<Icon_Name>i_button_yevethan_trooper.tga</Icon_Name>
+		<Max_Squad_Size> 9 </Max_Squad_Size>
+
+		<Create_Team_Type> Yevethan_Trooper_Medium_Container </Create_Team_Type>
+		<Company_Units> Yevethan_Trooper, Yevethan_Trooper, Yevethan_Trooper, Yevethan_Trooper, Yevethan_Trooper, Yevethan_Trooper, Yevethan_Trooper, Yevethan_Trooper, Yevethan_Trooper </Company_Units>
+	</GroundCompany>
+
+	<GroundCompany Name="Yevethan_Trooper_Medic_Squad">
+		<Variant_Of_Existing_Type>Yevethan_Soldier_Main_Squad</Variant_Of_Existing_Type>
+		<Text_ID>TEXT_UNIT_YEVETHANTROOPER_MEDIC_SQUAD</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_SUPPORT</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_YEVETHANTROOPER
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_YEVETHANTROOPER_SQUAD
+		TEXT_TOOLTIP_YEVETHANTROOPER_HEALTH
+		TEXT_TOOLTIP_YEVETHANTROOPER_MOVE
+		TEXT_TOOLTIP_YEVETHANTROOPER_SQUAD_MEDIC_WEAP1
+		TEXT_TOOLTIP_SEPARATOR_BONUS_BLOCK
+		TEXT_TOOLTIP_BONUS_MEDIC_HEAL_REPAIR
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_CAPABILITY_INFANTRY_CAPTURE
+		</Encyclopedia_Text>
+		<Icon_Name>i_button_yevethan_trooper_support.tga</Icon_Name>
+		<Max_Squad_Size> 9 </Max_Squad_Size>
+
+		<Create_Team_Type> Yevethan_Trooper_Medic_Container </Create_Team_Type>
+		<Company_Units> Yevethan_Trooper, Yevethan_Trooper, Yevethan_Trooper, Yevethan_Trooper, Yevethan_Trooper_Medic, Yevethan_Trooper, Yevethan_Trooper, Yevethan_Trooper, Yevethan_Trooper </Company_Units>
+	</GroundCompany>
+
+	<GroundCompany Name="Yevethan_Commando_Squad">
+		<Text_ID>TEXT_UNIT_YEVETHAN_COMMANDO_SQUAD</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_COMMANDO</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text> 
+		TEXT_TOOLTIP_YEVETHAN_COMMANDO
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_YEVETHAN_COMMANDO_SQUAD
+		TEXT_TOOLTIP_YEVETHAN_COMMANDO_HEALTH
+		TEXT_TOOLTIP_YEVETHAN_COMMANDO_MOVE
+		TEXT_TOOLTIP_YEVETHAN_COMMANDO_SQUAD_WEAP1
+		TEXT_TOOLTIP_YEVETHAN_COMMANDO_SQUAD_WEAP1A
+		TEXT_TOOLTIP_YEVETHAN_COMMANDO_SQUAD_WEAP2
+		TEXT_TOOLTIP_YEVETHAN_COMMANDO_SQUAD_WEAP3
+		TEXT_TOOLTIP_YEVETHAN_COMMANDO_SQUAD_WEAP4
+		TEXT_TOOLTIP_YEVETHAN_COMMANDO_SQUAD_WEAP5
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_CAPABILITY_INFANTRY_CAPTURE
+		</Encyclopedia_Text> 
+		<Icon_Name>i_button_Yevethan_Commando.tga</Icon_Name>
+
+		<Tech_Level>99</Tech_Level>
+		<Build_Tab_Land_Units>No</Build_Tab_Land_Units>
+
+		<Create_Team_Type> Yevethan_Commando_Container </Create_Team_Type>
+		<Max_Squad_Size> 4 </Max_Squad_Size>
+		<Company_Units> Yevethan_Commando_Proton, Yevethan_Commando, Yevethan_Commando, Yevethan_Commando_Lieutenant </Company_Units>
+	</GroundCompany>
+
+	<!-- Bunker Containers -->
+
+	<Container Name="Yevethan_Trooper_Heavy_Container">
+
+		<Text_ID>TEXT_UNIT_HEAVY_YEVETHANTROOPER_SQUAD</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_INFANTRY</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_YEVETHANTROOPER
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_YEVETHANTROOPER_SQUAD
+		TEXT_TOOLTIP_YEVETHANTROOPER_HEALTH
+		TEXT_TOOLTIP_YEVETHANTROOPER_MOVE
+		TEXT_TOOLTIP_YEVETHANTROOPER_SQUAD1_WEAP1
+		TEXT_TOOLTIP_YEVETHANTROOPER_SQUAD1_WEAP2
+		TEXT_TOOLTIP_YEVETHANTROOPER_SQUAD1_WEAP2A
+		TEXT_TOOLTIP_YEVETHANTROOPER_SQUAD1_WEAP3
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_CAPABILITY_INFANTRY_CAPTURE
+		</Encyclopedia_Text>
+		<Icon_Name>i_button_yevethan_trooper_weap.tga</Icon_Name>
+
+		<Select_Box_Scale>65</Select_Box_Scale>
+		<Select_Box_Z_Adjust>0</Select_Box_Z_Adjust>
+
+		<Land_Model_Name/>
+
+		<Max_Speed> 0.9 </Max_Speed>
+		<OverrideAcceleration>0.1</OverrideAcceleration>
+		<OverrideDeceleration>0.1</OverrideDeceleration>
+		<Max_Rate_Of_Turn>12.0</Max_Rate_Of_Turn>
+
+		<CategoryMask>Infantry | AntiVehicle</CategoryMask>
+		<Show_Name>No</Show_Name>
+
+		<Tactical_Bribe_Cost>25</Tactical_Bribe_Cost>
+
+		<Behavior>TEAM,SELECTABLE,UNIT_AI</Behavior>
+		<LandBehavior>REVEAL, LAND_TEAM_CONTAINER_LOCOMOTOR, TEAM_TARGETING, GARRISON_UNIT</LandBehavior>
+
+		<Lua_Script/>
+
+		<SFXEvent_Select>Null</SFXEvent_Select>
+
+		<Garrison_Category> Infantry </Garrison_Category>
+		<Garrison_Value>2</Garrison_Value>
+
+		<Is_Squashable> true </Is_Squashable>
+
+		<MovementClass>Infantry</MovementClass>
+		<Space_Layer> Land </Space_Layer>
+		<UnitCollisionClass> Infantry </UnitCollisionClass>
+		<OccupationStyle>1x1</OccupationStyle>
+		<ContainerArrangement> Dartboard </ContainerArrangement>
+		<FormationSpacing> 1 </FormationSpacing>
+		<FormationOrder> 2 </FormationOrder>
+		<MovementPredictionInterval> 4.0 </MovementPredictionInterval>
+
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+
+		<Land_FOW_Reveal_Range>300.0</Land_FOW_Reveal_Range>
+
+		<Targeting_Max_Attack_Distance>275.0</Targeting_Max_Attack_Distance>
+		<Targeting_Min_Attack_Distance>0.0</Targeting_Min_Attack_Distance>
+		<Idle_Chase_Range>50.0</Idle_Chase_Range>
+		<Guard_Chase_Range>275.0</Guard_Chase_Range>
+		<Attack_Move_Response_Range>275.0</Attack_Move_Response_Range>
+		<Autonomous_Move_Extension_Vs_Attacker>50.0</Autonomous_Move_Extension_Vs_Attacker>
+
+		<SpaceBehavior>REVEAL</SpaceBehavior>
+		<Space_FOW_Reveal_Range>800.0</Space_FOW_Reveal_Range>
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>SPREAD_OUT</Type>
+				<Mod_Multiplier>SPEED_MULTIPLIER,	 0.5f</Mod_Multiplier>
+				<Mod_Multiplier>TAKE_DAMAGE_MULTIPLIER, 0.75f</Mod_Multiplier>
+				<SFXEvent_GUI_Unit_Ability_Activated>Unit_Take_Cover_Storm_Trooper</SFXEvent_GUI_Unit_Ability_Activated>
+			</Unit_Ability>
+
+		</Unit_Abilities_Data>
+	</Container>
+
+	<Container Name="Yevethan_Trooper_Assault_Container">
+
+		<Text_ID>TEXT_UNIT_ASSAULT_YEVETHANTROOPER_SQUAD</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_INFANTRY</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_YEVETHANTROOPER
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_YEVETHANTROOPER_SQUAD
+		TEXT_TOOLTIP_YEVETHANTROOPER_HEALTH
+		TEXT_TOOLTIP_YEVETHANTROOPER_MOVE
+		TEXT_TOOLTIP_YEVETHANTROOPER_SQUAD2_WEAP1
+		TEXT_TOOLTIP_YEVETHANTROOPER_SQUAD2_WEAP2
+		TEXT_TOOLTIP_YEVETHANTROOPER_SQUAD2_WEAP2A
+		TEXT_TOOLTIP_YEVETHANTROOPER_SQUAD2_WEAP3
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_CAPABILITY_INFANTRY_CAPTURE
+		</Encyclopedia_Text>
+		<Icon_Name>i_button_yevethan_trooper_heavy.tga</Icon_Name>
+
+		<Select_Box_Scale>65</Select_Box_Scale>
+		<Select_Box_Z_Adjust>0</Select_Box_Z_Adjust>
+
+		<Land_Model_Name/>
+
+		<Max_Speed> 0.9 </Max_Speed>
+		<OverrideAcceleration>0.1</OverrideAcceleration>
+		<OverrideDeceleration>0.1</OverrideDeceleration>
+		<Max_Rate_Of_Turn>12.0</Max_Rate_Of_Turn>
+
+		<CategoryMask>Infantry | AntiInfantry</CategoryMask>
+		<Show_Name>No</Show_Name>
+
+		<Tactical_Bribe_Cost>25</Tactical_Bribe_Cost>
+
+		<Behavior>TEAM,SELECTABLE,UNIT_AI</Behavior>
+		<LandBehavior>REVEAL, LAND_TEAM_CONTAINER_LOCOMOTOR, TEAM_TARGETING, GARRISON_UNIT</LandBehavior>
+
+		<Lua_Script/>
+
+		<SFXEvent_Select>Null</SFXEvent_Select>
+
+		<Garrison_Category> Infantry </Garrison_Category>
+		<Garrison_Value>2</Garrison_Value>
+
+		<Is_Squashable> true </Is_Squashable>
+
+		<MovementClass>Infantry</MovementClass>
+		<Space_Layer> Land </Space_Layer>
+		<UnitCollisionClass> Infantry </UnitCollisionClass>
+		<OccupationStyle>1x1</OccupationStyle>
+		<ContainerArrangement> Dartboard </ContainerArrangement>
+		<FormationSpacing> 1 </FormationSpacing>
+		<FormationOrder> 2 </FormationOrder>
+		<MovementPredictionInterval> 4.0 </MovementPredictionInterval>
+
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+
+		<Land_FOW_Reveal_Range>300.0</Land_FOW_Reveal_Range>
+
+		<Targeting_Max_Attack_Distance>275.0</Targeting_Max_Attack_Distance>
+		<Targeting_Min_Attack_Distance>0.0</Targeting_Min_Attack_Distance>
+		<Idle_Chase_Range>50.0</Idle_Chase_Range>
+		<Guard_Chase_Range>275.0</Guard_Chase_Range>
+		<Attack_Move_Response_Range>275.0</Attack_Move_Response_Range>
+		<Autonomous_Move_Extension_Vs_Attacker>50.0</Autonomous_Move_Extension_Vs_Attacker>
+
+		<SpaceBehavior>REVEAL</SpaceBehavior>
+		<Space_FOW_Reveal_Range>800.0</Space_FOW_Reveal_Range>
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>SPREAD_OUT</Type>
+				<Mod_Multiplier>SPEED_MULTIPLIER,	 0.5f</Mod_Multiplier>
+				<Mod_Multiplier>TAKE_DAMAGE_MULTIPLIER, 0.75f</Mod_Multiplier>
+				<SFXEvent_GUI_Unit_Ability_Activated>Unit_Take_Cover_Storm_Trooper</SFXEvent_GUI_Unit_Ability_Activated>
+			</Unit_Ability>
+
+		</Unit_Abilities_Data>
+	</Container>
+
+	<Container Name="Yevethan_Trooper_Medium_Container">
+
+		<Text_ID>TEXT_UNIT_YEVETHANTROOPER_SQUAD</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_INFANTRY</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_YEVETHANTROOPER
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_YEVETHANTROOPER_SQUAD
+		TEXT_TOOLTIP_YEVETHANTROOPER_HEALTH
+		TEXT_TOOLTIP_YEVETHANTROOPER_MOVE
+		TEXT_TOOLTIP_YEVETHANTROOPER_SQUAD3_WEAP1
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_CAPABILITY_INFANTRY_CAPTURE
+		</Encyclopedia_Text>
+		<Icon_Name>i_button_yevethan_trooper.tga</Icon_Name>
+
+		<Select_Box_Scale>65</Select_Box_Scale>
+		<Select_Box_Z_Adjust>0</Select_Box_Z_Adjust>
+
+		<Land_Model_Name/>
+
+		<Max_Speed> 0.9 </Max_Speed>
+		<OverrideAcceleration>0.1</OverrideAcceleration>
+		<OverrideDeceleration>0.1</OverrideDeceleration>
+		<Max_Rate_Of_Turn>12.0</Max_Rate_Of_Turn>
+
+		<CategoryMask>Infantry | AntiInfantry</CategoryMask>
+		<Show_Name>No</Show_Name>
+
+		<Tactical_Bribe_Cost>25</Tactical_Bribe_Cost>
+
+		<Behavior>TEAM,SELECTABLE,UNIT_AI</Behavior>
+		<LandBehavior>REVEAL, LAND_TEAM_CONTAINER_LOCOMOTOR, TEAM_TARGETING, GARRISON_UNIT</LandBehavior>
+
+		<Lua_Script/>
+
+		<SFXEvent_Select>Null</SFXEvent_Select>
+
+		<Garrison_Category> Infantry </Garrison_Category>
+		<Garrison_Value>2</Garrison_Value>
+
+		<Is_Squashable> true </Is_Squashable>
+
+		<MovementClass>Infantry</MovementClass>
+		<Space_Layer> Land </Space_Layer>
+		<UnitCollisionClass> Infantry </UnitCollisionClass>
+		<OccupationStyle>1x1</OccupationStyle>
+		<ContainerArrangement> Dartboard </ContainerArrangement>
+		<FormationSpacing> 1 </FormationSpacing>
+		<FormationOrder> 2 </FormationOrder>
+		<MovementPredictionInterval> 4.0 </MovementPredictionInterval>
+
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+
+		<Land_FOW_Reveal_Range>300.0</Land_FOW_Reveal_Range>
+
+		<Targeting_Max_Attack_Distance>275.0</Targeting_Max_Attack_Distance>
+		<Targeting_Min_Attack_Distance>0.0</Targeting_Min_Attack_Distance>
+		<Idle_Chase_Range>50.0</Idle_Chase_Range>
+		<Guard_Chase_Range>275.0</Guard_Chase_Range>
+		<Attack_Move_Response_Range>275.0</Attack_Move_Response_Range>
+		<Autonomous_Move_Extension_Vs_Attacker>50.0</Autonomous_Move_Extension_Vs_Attacker>
+
+		<SpaceBehavior>REVEAL</SpaceBehavior>
+		<Space_FOW_Reveal_Range>800.0</Space_FOW_Reveal_Range>
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>SPREAD_OUT</Type>
+				<Mod_Multiplier>SPEED_MULTIPLIER,	 0.5f</Mod_Multiplier>
+				<Mod_Multiplier>TAKE_DAMAGE_MULTIPLIER, 0.75f</Mod_Multiplier>
+				<SFXEvent_GUI_Unit_Ability_Activated>Unit_Take_Cover_Storm_Trooper</SFXEvent_GUI_Unit_Ability_Activated>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+	</Container>
+
+	<Container Name="Yevethan_Trooper_Medic_Container">
+
+		<Text_ID>TEXT_UNIT_YEVETHANTROOPER_MEDIC_SQUAD</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_SUPPORT</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_YEVETHANTROOPER
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_YEVETHANTROOPER_SQUAD
+		TEXT_TOOLTIP_YEVETHANTROOPER_HEALTH
+		TEXT_TOOLTIP_YEVETHANTROOPER_MOVE
+		TEXT_TOOLTIP_YEVETHANTROOPER_SQUAD_MEDIC_WEAP1
+		TEXT_TOOLTIP_SEPARATOR_BONUS_BLOCK
+		TEXT_TOOLTIP_BONUS_MEDIC_HEAL_REPAIR
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_CAPABILITY_INFANTRY_CAPTURE
+		</Encyclopedia_Text>
+		<Icon_Name>i_button_yevethan_trooper_support.tga</Icon_Name>
+
+		<Select_Box_Scale>65</Select_Box_Scale>
+		<Select_Box_Z_Adjust>0</Select_Box_Z_Adjust>
+
+		<Land_Model_Name/>
+
+		<Max_Speed> 0.9 </Max_Speed>
+		<OverrideAcceleration>0.1</OverrideAcceleration>
+		<OverrideDeceleration>0.1</OverrideDeceleration>
+		<Max_Rate_Of_Turn>12.0</Max_Rate_Of_Turn>
+
+		<CategoryMask>Infantry | AntiInfantry</CategoryMask>
+		<Show_Name>No</Show_Name>
+
+		<Tactical_Bribe_Cost>25</Tactical_Bribe_Cost>
+
+		<Behavior>TEAM,SELECTABLE,UNIT_AI</Behavior>
+		<LandBehavior>REVEAL, LAND_TEAM_CONTAINER_LOCOMOTOR, TEAM_TARGETING, GARRISON_UNIT</LandBehavior>
+
+		<Lua_Script/>
+
+		<SFXEvent_Select>Null</SFXEvent_Select>
+
+		<Garrison_Category> Infantry </Garrison_Category>
+		<Garrison_Value>2</Garrison_Value>
+
+		<Is_Squashable> true </Is_Squashable>
+
+		<MovementClass>Infantry</MovementClass>
+		<Space_Layer> Land </Space_Layer>
+		<UnitCollisionClass> Infantry </UnitCollisionClass>
+		<OccupationStyle>1x1</OccupationStyle>
+		<ContainerArrangement> Dartboard </ContainerArrangement>
+		<FormationSpacing> 1 </FormationSpacing>
+		<FormationOrder> 2 </FormationOrder>
+		<MovementPredictionInterval> 4.0 </MovementPredictionInterval>
+
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+
+		<Land_FOW_Reveal_Range>300.0</Land_FOW_Reveal_Range>
+
+		<Targeting_Max_Attack_Distance>275.0</Targeting_Max_Attack_Distance>
+		<Targeting_Min_Attack_Distance>0.0</Targeting_Min_Attack_Distance>
+		<Idle_Chase_Range>0.0</Idle_Chase_Range>
+		<Guard_Chase_Range>0.0</Guard_Chase_Range>
+		<Attack_Move_Response_Range>0.0</Attack_Move_Response_Range>
+		<Autonomous_Move_Extension_Vs_Attacker>0.0</Autonomous_Move_Extension_Vs_Attacker>
+
+		<SpaceBehavior>REVEAL</SpaceBehavior>
+		<Space_FOW_Reveal_Range>800.0</Space_FOW_Reveal_Range>
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>SPREAD_OUT</Type>
+				<Mod_Multiplier>SPEED_MULTIPLIER,	 0.5f</Mod_Multiplier>
+				<Mod_Multiplier>TAKE_DAMAGE_MULTIPLIER, 0.75f</Mod_Multiplier>
+				<SFXEvent_GUI_Unit_Ability_Activated>Unit_Take_Cover_Storm_Trooper</SFXEvent_GUI_Unit_Ability_Activated>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+	</Container>
+
+	<Container Name="Yevethan_Commando_Container">
+
+		<Text_ID>TEXT_UNIT_YEVETHAN_COMMANDO_SQUAD</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_COMMANDO</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_YEVETHAN_COMMANDO
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_YEVETHAN_COMMANDO_SQUAD
+		TEXT_TOOLTIP_YEVETHAN_COMMANDO_HEALTH
+		TEXT_TOOLTIP_YEVETHAN_COMMANDO_MOVE
+		TEXT_TOOLTIP_YEVETHAN_COMMANDO_SQUAD_WEAP1
+		TEXT_TOOLTIP_YEVETHAN_COMMANDO_SQUAD_WEAP1A
+		TEXT_TOOLTIP_YEVETHAN_COMMANDO_SQUAD_WEAP2
+		TEXT_TOOLTIP_YEVETHAN_COMMANDO_SQUAD_WEAP3
+		TEXT_TOOLTIP_YEVETHAN_COMMANDO_SQUAD_WEAP4
+		TEXT_TOOLTIP_YEVETHAN_COMMANDO_SQUAD_WEAP5
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_CAPABILITY_INFANTRY_CAPTURE
+		</Encyclopedia_Text>
+		<Icon_Name>i_button_yevethan_commando.tga</Icon_Name>
+
+		<Select_Box_Scale>65</Select_Box_Scale>
+		<Select_Box_Z_Adjust>0</Select_Box_Z_Adjust>
+
+		<Land_Model_Name/>
+
+		<Max_Speed> 1.2 </Max_Speed>
+		<OverrideAcceleration>0.1</OverrideAcceleration>
+		<OverrideDeceleration>0.1</OverrideDeceleration>
+		<Max_Rate_Of_Turn>20.0</Max_Rate_Of_Turn>
+
+		<CategoryMask>Infantry | AntiInfantry</CategoryMask>
+		<Show_Name>No</Show_Name>
+
+		<Tactical_Bribe_Cost>25</Tactical_Bribe_Cost>
+
+		<Behavior>TEAM,SELECTABLE,UNIT_AI</Behavior>
+		<LandBehavior>REVEAL, LAND_TEAM_CONTAINER_LOCOMOTOR,TEAM_TARGETING,GARRISON_UNIT</LandBehavior>
+
+		<Lua_Script/>
+
+		<SFXEvent_Select>Null</SFXEvent_Select>
+
+		<Garrison_Category> Infantry </Garrison_Category>
+		<Garrison_Value>1</Garrison_Value>
+
+		<Is_Squashable> true </Is_Squashable>
+
+		<MovementClass>Infantry</MovementClass>
+		<Space_Layer> Land </Space_Layer>
+		<UnitCollisionClass> Infantry </UnitCollisionClass>
+		<OccupationStyle>1x1</OccupationStyle>
+		<ContainerArrangement> Dartboard </ContainerArrangement>
+		<FormationSpacing> 1 </FormationSpacing>
+		<FormationOrder> 2 </FormationOrder>
+		<MovementPredictionInterval> 4.0 </MovementPredictionInterval>
+
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+
+		<Land_FOW_Reveal_Range>300.0</Land_FOW_Reveal_Range>
+
+		<Targeting_Max_Attack_Distance>275.0</Targeting_Max_Attack_Distance>
+		<Targeting_Min_Attack_Distance>0.0</Targeting_Min_Attack_Distance>
+		<Idle_Chase_Range>50.0</Idle_Chase_Range>
+		<Guard_Chase_Range>275.0</Guard_Chase_Range>
+		<Attack_Move_Response_Range>275.0</Attack_Move_Response_Range>
+		<Autonomous_Move_Extension_Vs_Attacker>50.0</Autonomous_Move_Extension_Vs_Attacker>
+
+		<SpaceBehavior>REVEAL</SpaceBehavior>
+		<Space_FOW_Reveal_Range>800.0</Space_FOW_Reveal_Range>
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>SPRINT</Type>
+			</Unit_Ability>
+			
+			<Unit_Ability>
+				<Type>PROXIMITY_MINES</Type>
+				<GUI_Activated_Ability_Name>Army_Commando_Proximity_Mines_AI</GUI_Activated_Ability_Name>
+				<Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_PROXIMITY_MINES_AP_NAME</Alternate_Name_Text>
+				<Alternate_Description_Text>TEXT_TOOLTIP_ABILITY_PROXIMITY_MINES_AP_DESCRIPTION</Alternate_Description_Text>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+		
+		<Abilities SubObjectList="Yes">
+			<Proximity_Mines_Ability Name="Army_Commando_Proximity_Mines_AI">
+				<Activation_Style>User_Input</Activation_Style>
+				<Activation_Min_Range>0.0</Activation_Min_Range>
+				<Activation_Max_Range>25.0</Activation_Max_Range>
+				<Mine_Type>Mine_Land_Prox_Antipersonnel</Mine_Type>
+				<Trigger_Radius>10</Trigger_Radius>
+				<Number_Of_Mines>6</Number_Of_Mines>
+				<Activation_Time_In_Seconds>0.5</Activation_Time_In_Seconds>
+				<Activate_SFX>Unit_Mine_Arm</Activate_SFX>
+			</Proximity_Mines_Ability>
+		</Abilities>
+	</Container>
+	
+</Yevethan_Ground>

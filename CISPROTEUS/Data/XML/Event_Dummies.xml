@@ -812,20 +812,16 @@
 		<Is_Named_Hero>Yes</Is_Named_Hero>
 	</DummyStructure>
 
-	<!-- <DummyStructure Name="Warlord_Choice_Corellian_Proteus">
+    <DummyStructure Name="Warlord_Choice_CIS_Proteus">
 		<Variant_Of_Existing_Type>Event_Dummy_Template</Variant_Of_Existing_Type>
 
-		<Text_ID>Corellia</Text_ID>
+		<Text_ID>TEXT_EVENT_WARLORD_CHOICE_CIS_PROTEUS</Text_ID>
 		<Encyclopedia_Text>
 			TEXT_EVENT_TOOLTIP_WARLORD_CHOICE
 			TEXT_PLANET_SEPARATOR
-			Placeholder Text
+			TEXT_PROTEUS_DESCRIPTION_CIS_PROTEUS
 		</Encyclopedia_Text>
 		<Encyclopedia_Unit_Class> </Encyclopedia_Unit_Class>
-
-		<Icon_Name>i_button_pitta.tga</Icon_Name>
-		<Is_Named_Hero>Yes</Is_Named_Hero>
-	</DummyStructure> -->
 
 	<!-- Regime Leader Choices -->
 

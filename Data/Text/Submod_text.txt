@@ -1,4 +1,5 @@
-﻿TEXT_NOTE,Put text changes for submods here
+﻿TEXT_HERO_KALANI,Kalani
+TEXT_NOTE,Put text changes for submods here
 TEXT_TOOLTIP_AUXILIA,An antiquated but well-rounded cruiser. It was designed to run down pirate vessels by the Trade Defense Force several centuries before the Clone Wars, and commonly sees service alongside the Captor-class that shares its base design. Well suited to engaging medium capital ships and escort vessels.
 TEXT_TOOLTIP_AUXILIA_HULL,Hull: 2310 (Frigate)
 TEXT_TOOLTIP_AUXILIA_MOVE,Speed: 5.6 | Accel: 0.25 | Turn: 0.45
@@ -36,6 +37,7 @@ TEXT_TOOLTIP_DIAMOND_PD,Point-Defense: 1 / 0.21s / 1.5km
 TEXT_TOOLTIP_DIAMOND_SHIELD,Shields: 900 / [18/R] (Frigate)
 TEXT_TOOLTIP_DIAMOND_WEAP1,1x Medium Dual Laser Cannon: 2 / 1.67s / 4.1km
 TEXT_TOOLTIP_DIAMOND_WEAP2,4x Medium Rapid Laser Cannons: 6 / 1.67s / 3.6km
+TEXT_TOOLTIP_ESCORT_KALANI,2x BX Commando Droid Squad
 TEXT_TOOLTIP_HARDCELL,A medium transport frigate developed by the Techno Union and sold to the Intergalactic Banking Clan and Confederacy of Independent Systems. Though typically only lightly armed with anti-starfighter lasers, vessels intended for combat roles are also outfitted with missile launchers. Six such variants were part of the fleet sent to destroy Outbound Flight and were destroyed by CEDF Commander Thrawn. It is best used to screen friendly vessels while providing long-range missile support.
 TEXT_TOOLTIP_HARDCELL_FLEET_TENDER,Fighter Tender: 2 / 1.0s / 1.9km
 TEXT_TOOLTIP_HARDCELL_HULL,Hull: 700 (Corvette)
@@ -44,6 +46,10 @@ TEXT_TOOLTIP_HARDCELL_SHIELD,Shields: 500 / [10/R] (Corvette)
 TEXT_TOOLTIP_HARDCELL_SQUADRON,Fighters: 0.5 / 1.5
 TEXT_TOOLTIP_HARDCELL_WEAP1,5x Medium Laser Cannons: 2 / 2.08s / 4.0km
 TEXT_TOOLTIP_HARDCELL_WEAP2,1x Assault Concussion Missile: 3 / 9.0s / 7.0km
+TEXT_TOOLTIP_KALANI,Kalani was a super tactical droid with the rank of general during the Clone Wars. An improvement over the standard tactical droid, Kalani's advanced processors and robust frame would make him an effective tactician and combatant. Dispatched by Count Dooku to Onderon to support its Confederacy-aligned government, Kalani efficiently cracked down on the resistance there until the situation made maintaining the planet unfeasible.
+TEXT_TOOLTIP_KALANI_HEALTH,Health: 200 (Hero)
+TEXT_TOOLTIP_KALANI_MOVE,Speed: 1.0
+TEXT_TOOLTIP_KALANI_WEAP1,1x E-5 Blaster Rifle: 3 / 1.25s / 240m
 TEXT_TOOLTIP_LUCREHULKBATTLESHIP,Lucrehulk conversion that uses interior space normally reserved for complements/cargo for extra reactors, shield generators and bracing. Mounts a significant amount of turbolasers as a result, while maintaining a dangerous defensive laser grid. Compared to battle carriers it is much better at ship to ship combat but loses out in sheer fighter presence.
 TEXT_TOOLTIP_LUCREHULKBATTLESHIP_HULL,Hull: 26000 (Capital)
 TEXT_TOOLTIP_LUCREHULKBATTLESHIP_MOVE,Speed: 2.1 | Accel: 0.05 | Turn: 0.15

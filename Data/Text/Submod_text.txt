@@ -22,6 +22,7 @@ TEXT_TOOLTIP_C9979_SHIELD,Shields: 700 / [14/R] (Corvette)
 TEXT_TOOLTIP_C9979_SQUADRON,Fighters: 1 / 1 | Bombers: 1 / 2
 TEXT_TOOLTIP_C9979_WEAP1,2x Heavy Dual Laser Cannons: 2 / 5.0s / 4.6km
 TEXT_TOOLTIP_C9979_WEAP2,2x Medium Dual Rapid Laser Cannons: 6 / 5.0s / 3.6km
+TEXT_TOOLTIP_COMMAND_INVULNERABLE,Providence Dreadnought, Invulnerable
 TEXT_TOOLTIP_DH_OMNI,A dated corporate cargo hauler converted into a general purpose fleet support craft in an attempt to shift logistics burdens away from the Trade Federation. It is used as a fleet tender and to deploy interdiction mines - the most reliable method of hyperspace prevention in the era. It is durable and well-protected from fighters but vulnerable to larger enemy vessels.
 TEXT_TOOLTIP_DH_OMNI_HULL,Hull: 4400 (Heavy Frigate)
 TEXT_TOOLTIP_DH_OMNI_MINE,Interdiction Mines: 3 / 9
@@ -75,6 +76,7 @@ TEXT_TOOLTIP_PROVIDENCE_DREADNOUGHT_WEAP2,1x Ultraheavy Ion Cannon: 1 / 5.0s / 8
 TEXT_TOOLTIP_PROVIDENCE_DREADNOUGHT_WEAP3,4x Light Anti-Fighter Ion Cannons: 2 / 1.67s / 3.4km
 TEXT_TOOLTIP_PROVIDENCE_DREADNOUGHT_WEAP4,3x Medium Quad Laser Cannons: 2 / 0.44s / 4.4km
 TEXT_TOOLTIP_PROVIDENCE_DREADNOUGHT_WEAP5,8x Assault Concussion Missiles: 3 / 9.0s / 7.4km
+TEXT_TOOLTIP_TRENCH,A feared and legendary commander for the Andoan forces, Commerce Guild, and now Confederacy of Independent Systems who was presumed dead on several occasions only to re-appear later. He is a mastermind of blockades and counteroffensives and one of the Confederacy's most experienced officers. He is the nemesis of the Republic Admiral Yularen who has faced him on multiple occasions.
 TEXT_UNIT_AUXILIA,Auxilia Pursuit Destroyer
 TEXT_UNIT_C9979,C-9979 Carrier
 TEXT_UNIT_DH_OMNI,DH-Omni Support Vessel

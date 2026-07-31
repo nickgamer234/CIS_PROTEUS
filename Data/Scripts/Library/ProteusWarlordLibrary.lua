@@ -540,7 +540,7 @@ return {
 			"Imperial_Army_Trooper_Company", "Imperial_Army_Guard_Company", "Imperial_Army_74Z_Bike_Company", 
 			"Imperial_AT_PT_Company", "AT_ST_Company", "Imperial_II_Star_Destroyer", 
 			"AT_AA_Walker_Company", "S_1_Firehawke_Company", "SPMAG_Walker_Company", "Deathhawk_Company", "PX4_Company", 
-			"Imperial_A5_Juggernaut_Company", "Imperial_AT_AT_Walker_Company", "Imperial_Army_Guard_Company", "Carida_Academy", "Adz_Patrol_Destroyer"},
+			"Imperial_A5_Juggernaut_Company", "Imperial_AT_AT_Walker_Company", "Imperial_Army_Guard_Company", "Carida_Academy", "Adz_Patrol_Destroyer", "Imperial_Dropship_Transport_Company", "Chariot_LAV_Company"},
 			FactionOverride = "Empire",
 			IntroText = "TEXT_CONQUEST_BFC_DL_INTRO_GENERIC",
 			IntroHolo = "IG-88_Loop",

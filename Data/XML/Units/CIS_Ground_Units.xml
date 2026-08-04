@@ -275,7 +275,7 @@
 		<IsDeathClone> true </IsDeathClone>
 	</Death_Clone>
 
-	<GroundCompany Name="Persuader_Company">
+	<!-- <GroundCompany Name="Persuader_Company">
 
 		<Text_ID>TEXT_UNIT_PERSUADER_COMPANY</Text_ID>
 		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_MEDIUM_TANK</Encyclopedia_Unit_Class>
@@ -339,14 +339,10 @@
 			</Unit_Ability>
 		</Unit_Abilities_Data>
 
-		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
 		<Tactical_Build_Cost_Multiplayer>620</Tactical_Build_Cost_Multiplayer>
 		<Tactical_Build_Time_Seconds>12</Tactical_Build_Time_Seconds>
 		<Tactical_Build_Prerequisites>Ground_Level_Three_Tech_Upgrade</Tactical_Build_Prerequisites>
 		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
-		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
-		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->  
-		<!--<MULTIPLAYER SKIRMISH VALUES END>-->
 	</GroundCompany>
 
 	<GroundVehicle Name="Persuader_Assault">
@@ -405,7 +401,7 @@
 		<Expensive_Bribe_Cost>0</Expensive_Bribe_Cost>
 		<Build_Time_Seconds>30</Build_Time_Seconds>
 		<Slice_Cost_Credits/>
-		<Required_Special_Structures>R_Ground_Light_Vehicle_Factory | Techno_Union_HQ</Required_Special_Structures>
+		<Required_Special_Structures>I_Ground_Light_Vehicle_Factory | Techno_Union_HQ</Required_Special_Structures>
 		<Build_Time_Reduced_By_Multiple_Factories> Yes </Build_Time_Reduced_By_Multiple_Factories>
 		<Build_Tab_Land_Units>Yes</Build_Tab_Land_Units>
 		<Build_Initially_Locked>no</Build_Initially_Locked>
@@ -413,7 +409,7 @@
 		<Score_Cost_Credits>180</Score_Cost_Credits>
 		<Population_Value>1</Population_Value>
 
-		<Tech_Level>99</Tech_Level>
+		<Tech_Level>0</Tech_Level>
 		<Required_Ground_Base_Level>1</Required_Ground_Base_Level>
 
 		<Affiliation>Imperial_Proteus</Affiliation>
@@ -440,15 +436,11 @@
 			</Unit_Ability>
 		</Unit_Abilities_Data>
 
-		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
 		<Tactical_Build_Cost_Multiplayer>505</Tactical_Build_Cost_Multiplayer>
 		<Tactical_Build_Time_Seconds>10</Tactical_Build_Time_Seconds>
 		<Tactical_Build_Prerequisites>Ground_Level_Three_Tech_Upgrade</Tactical_Build_Prerequisites>
-		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
-		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
-		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->  
-		<!--<MULTIPLAYER SKIRMISH VALUES END>-->
-	</GroundCompany>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue> -->
+		
 
 
 	<GroundVehicle Name="HMP">
